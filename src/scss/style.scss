@@ -1,2 +1,132 @@
 @import "fonts.scss";
 @import "_inner-page-style.scss";
+
+.Gpage {
+    margin: 8px 10px;
+}
+.Gfaq {
+    max-width: 1240px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+
+    &__title {
+        font-family: Roboto Slab;
+        font-weight: 400;
+        text-align: center;
+        color: #202928;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__item {
+        background: #f9f9f9;
+        border-radius: 10px;
+        overflow: hidden;
+        .Gfaq__open {
+            display: block;
+        }
+        .Gfaq__close {
+            display: none;
+        }
+        &--active {
+            .Gfaq__question {
+                background: #01B055;
+                color: #fff;
+            }
+            .Gfaq__open {
+                display: none;
+            }
+            .Gfaq__close {
+                display: block;
+            }
+            .Gfaq__answer {
+                max-height: 100%;
+            }
+        }
+    }
+
+    &__question {
+        width: 100%;
+        background: #fff;
+        border: none;
+        text-align: left;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        line-height: 157%;
+        color: #202928;
+        img {
+            margin-left: 8px;
+        }
+    }
+
+    &__answer {
+        overflow: hidden;
+        background: #fff;
+        font-weight: 403;
+        max-height: 0;
+        line-height: 157%;
+        transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    }
+
+    @media (min-width: 320px) {
+        &__title {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        &__question {
+            padding: 14px;
+            font-size: 15px;
+        }
+        &__open {
+            height: 19px;
+        }
+        &__close {
+            height: 15px;
+        }
+        &__answer {
+            font-size: 15px;
+            padding: 0px 25px 15px 14px;
+        }
+    }
+    @media (min-width: 480px) {
+        &__title {
+            margin-bottom: 24px;
+        }
+    }
+    @media (min-width: 640px) {
+        padding: 0 14px;
+        &__title {
+            margin-bottom: 28px;
+        }
+    }
+    @media (min-width: 960px) {
+        padding: 0 24px;
+    }
+    @media (min-width: 1240px) {
+        &__title {
+            font-size: 34px;
+            margin-bottom: 30px;
+        }
+        &__question {
+            padding: 20px;
+            font-size: 16px;
+        }
+        &__open {
+            height: 22px;
+        }
+        &__close {
+            height: 18px;
+        }
+        &__answer {                
+            font-size: 16px;
+            padding: 0 50px 0 20px;
+        }
+    }
+}
