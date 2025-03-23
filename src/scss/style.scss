@@ -644,15 +644,22 @@ p {
 /// 
 
 .Gpage {
-	margin: 8px 10px;
+	// margin: 8px 10px;
 }
 
 .Gfaq {
 	max-width: 1240px;
 	margin: 0 auto;
+	padding: 60px 0 120px;
 
+	.svg__icons {
+		width: 18px;
+		height: 18px;
+		fill: #01B055;
+		transition: all 0.3s ease;
+	}
 	&__title {
-		font-family: Roboto Slab;
+		font-family: 'RobotoSlab', sans-serif;
 		font-weight: 400;
 		text-align: center;
 		color: #202928;
@@ -668,7 +675,7 @@ p {
 		background: #f9f9f9;
 		border-radius: 10px;
 		overflow: hidden;
-
+		box-shadow: 0px 0px 31.5px 0px #0000001A;
 		.Gfaq__open {
 			display: block;
 		}
@@ -681,6 +688,11 @@ p {
 			.Gfaq__question {
 				background: #01B055;
 				color: #fff;
+			}
+
+			.svg__icons {
+				fill: #DAF3E6;
+				transform: rotate(225deg);
 			}
 
 			.Gfaq__open {
@@ -706,9 +718,9 @@ p {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		font-weight: bold;
-		line-height: 157%;
 		color: #202928;
+		font-family: 'NormalidadCompact', sans-serif;
+		font-weight: 500;
 
 		img {
 			margin-left: 8px;
@@ -756,7 +768,7 @@ p {
 	}
 
 	@media (min-width: 640px) {
-		padding: 0 14px;
+		// padding: 0 14px;
 
 		&__title {
 			margin-bottom: 28px;
@@ -764,7 +776,7 @@ p {
 	}
 
 	@media (min-width: 960px) {
-		padding: 0 24px;
+		// padding: 0 24px;
 	}
 
 	@media (min-width: 1240px) {
@@ -775,7 +787,8 @@ p {
 
 		&__question {
 			padding: 20px;
-			font-size: 16px;
+			font-size: 20px;
+			line-height: 30px;
 		}
 
 		&__open {
