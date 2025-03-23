@@ -3,15 +3,301 @@
   @@include('html/head.html',{
     "title":"Главная"
   })
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
   <body>
+    <div class="bg-main">
+      <div class="page-wrapper">
+        @@include('html/header.html',{})
+      </div>
+      <section class="main-screen">
+        <div class="container page-wrapper">
+          <h1 class="mb-17">Ваши долги - наша забота</h1>
+          <div class="main__text-block">
+            <p><span class="bold">Законное</span> решение проблем с долгами и кредитами.</p>
+            <p><span class="bold">Профессиональные</span> юридические услуги для физических и юридических лиц.</p>
+            <p>Получите <span class="bold bg-green">бесплатную консультацию</span> прямо сейчас любым удобным способом!</p>
+          </div>
+          
+          <div class="buttons-block">
+            <a href="#" class="button call-us">Позвонить нам</a>
+            <a href="#" class="button whatsapp">Написать в Whatsapp</a>
+            <a href="#" class="button telegram">Написать в Telegram</a>
+            <div class="icons-socials main">
+              <a href="#">
+                <div class="icons ws">
+                  <svg class="svg__icons">
+                    <use xlink:href="img/icons/icons.svg#whatsapp">
+                    </use>
+                  </svg>
+                </div>
+              </a>
+            
+              <a href="#">
+                <div class="icons tg">
+                  <svg class="svg__icons">
+                    <use xlink:href="img/icons/icons.svg#telegram">
+                    </use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+          <p class="consultation-info">
+            На консультации мы сможем понять в каком положении находятся ваши финансовые дела, нужно ли вам процедурное
+            банкротство, и, что важно, определить дальнейшие действия для запуска процедуры.
+          </p>
+          <img class="man-block" src="img/man.png" alt="man">
+        </div>
+      </section>
+    </div>
+    <section class="why-us">
+      <div class="container page-wrapper">
+        <h2>Почему выбирают нас?</h2>
+        <div class="reasons">
+          <div class="reasons-block">
+            <div class="reason">
+              <span class="checkmark">✔</span><span><span class="bold">Сопровождение </span>вашего дела на всех этапах</span>
+            </div>
+            <div class="reason">
+              <span class="checkmark">✔</span><span><span class="bold">Помогаем</span> собрать документы</span>
+            </div>
+            <div class="reason">
+              <span class="checkmark">✔</span><span><span class="bold">Освободим</span> от присутствия в суде</span>
+            </div>
+            <div class="reason">
+              <span class="checkmark">✔</span><span><span class="bold">Прозрачность</span> договора без скрытых платежей</span>
+            </div>
+            <div class="reason">
+              <span class="checkmark">✔</span><span><span class="bold">Собственная</span> юридическая IT система</span>
+            </div>
+            <div class="reason">
+              <span class="checkmark">✔</span><span><span class="bold">Собственное приложение</span> для удобства контроля за процессом</span>
+            </div>
+          </div>
+          <div class="reasons-block">
+            <div class="reason">
+              <span class="checkmark">✔</span><span><span class="bold">Работаем</span> как через офисы, так и онлайн</span>
+            </div>
+            <div class="reason">
+              <span class="checkmark">✔</span><span><span class="bold">Вернем деньги</span> за наши услуги, если суд решил не в вашу
+              пользу</span>
+            </div>
+            <div class="reason">
+              <span class="checkmark">✔</span><span><span class="bold">С пониманием</span> относимся к любой ситуации</span>
+            </div>
+            <div class="reason">
+              <span class="checkmark">✔</span><span><span class="bold">99% решений в пользу</span> наших клиентов дел</span>
+            </div>
+            <div class="reason">
+              <span class="checkmark">✔</span><span>Просто по-человечески <span class="bold">поддержим</span></span>
+            </div>
+          </div>
+        </div>
 
-      @@include('html/header.html',{})
+        <div class="form-container">
+          <div class="contact-form">
+            <h2>Отправьте ваши контакты</h2>
+            <p>Оставьте заявку, и мы свяжемся с вами!</p>
+            <form>
+              <input type="text" placeholder="Ваше имя" required>
+              <input type="tel" id="phone" placeholder="+7" required>
+              <button class="button sendcont" type="submit">Отправить контакты</button>
+              <label class="checkbox">
+                <input type="checkbox" required>
+                <span class="checkmark"></span>
+                <span class="checkbox-text">Согласен(на) на обработку данных</span>
+              </label>
+            </form>
+          </div>
+        </div>
+
+        <div class="under-key">
+          <h2>Банкротство физических лиц "Под Ключ"</h2>
+          <div class="key-blocks">
+            <div class="key-item">
+              <img src="img/case.png" alt="case">
+              <p>Берем на себя все этапы процедуры банкротства, начиная от консультации и сбора документов до представительства в суде.</p>
+            </div>
+            <div class="key-item">
+              <img src="img/shield.png" alt="shield">
+              <p>Каждый шаг тщательно контролируется, а наши специалисты обеспечивают защиту на всех уровнях, чтобы вы могли быть
+                уверены
+                в своей безопасности.</p>
+            </div>
+            <div class="key-item">
+              <img src="img/paper.png" alt="paper">
+              <p>Мы возьмем на себя сложные переговоры с кредиторами, чтобы защитить вас от возможных ошибок, вызванных
+                психологическим
+                давлением со стороны оппонентов.</p>
+            </div>
+            <div class="key-item">
+              <img src="img/chess.png" alt="chess">
+              <p>Наш опыт и профессиональный подход помогут выработать наиболее выгодную стратегию взаимодействия и минимизировать
+                риски.</p>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="check">
+          <div class="check-bg">
+            <div class="check-container">
+              <h2>Проверьте, подойдет ли вам процедура банкротства</h2>
+              <p>Ответьте на несколько вопросов, чтобы определить возможность банкротства в вашем случае</p>
+              <a href="#" class="button check">Проверить ></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="stage">
+      <div class="container page-wrapper">
+        <h2>Этапы прохождения процедуры:</h2>
+        <div class="stage-block">
+          <div class="stage-block-flex">
+            <div class="stage-element">
+              <p><span class="bold">Консультация:</span> экспертиза комплекта документов, оценка ситуации, выработка стратегии</p>
+              <span class="number">1.</span>
+            </div>
+            <div class="stage-element">
+              <p><span class="bold">Заключение договора</span> с ЕВИ эксперт, внесение предоплаты</p>
+              <span class="number">2.</span>
+            </div>
+            <div class="stage-element">
+              <p><span class="bold">Сбор пакета документов</span> для подачи на банкротство и подача в суд</p>
+              <span class="number">3.</span>
+            </div>
+          </div>
+          
+          <div class="step-line"></div>
+
+          <div class="stage-block-flex two">
+            <div class="stage-element">
+              <span class="number">6.</span>
+              <p>Вы начинаете <span class="bold">новую финансовую жизнь</span> получив этот опыт и сделав выводы</p>
+            </div>
+            <div class="stage-element">
+              <span class="number">5.</span>
+              <p><span class="bold">Окончание процедуры,</span> списание долгов, завершение процедуры банкротства</p>
+            </div>
+            <div class="stage-element">
+              <span class="number">4.</span>
+              <p><span class="bold">Работа нашего юриста</span> в ваших интересах и финансового/арбитражного управляющего</p>
+            </div>
+          </div>
+        </div>
+        <div class="button-block">
+          <a href="#" class="button spisat">Списать долги</a>
+        </div>
+        <p class="lite-font">*Перед подписание договора с "ЕВИ эксперт" вы точно будете знать какие траты с вашей стороны будут необходимы, у нас нет
+        скрытых платежей. Предоставим рассрочку платежа для более комфортного расчета за работу наших специалистов.</p>
+        
+      </div>
+    </section>
+    
+    <section class="dolgi">
+      <div class="container page-wrapper">
+        <div class="dolgi-block">
+          <div class="dolgi-item">
+            <div class="dolgi-wrapper">
+              <h2>Долги физического лица которые МОЖНО списать:</h2>
+              <div class="dolgi-text">
+                <span>
+                  <span class="checkmark">✔</span><span>Просроченные кредиты банков</span>
+                </span>
+                <span>
+                  <span class="checkmark">✔</span><span>Займы в Микрофинансовых организациях (МФО)</span>
+                </span>
+                <span>
+                  <span class="checkmark">✔</span><span>Услуги ЖКХ</span>
+                </span>
+                <span>
+                  <span class="checkmark">✔</span><span>Долги перед юридическими лицами</span>
+                </span>
+                <span>
+                  <span class="checkmark">✔</span><span>Неоплаченные налоги</span>
+                </span>
+                <span>
+                  <span class="checkmark">✔</span><span>Неоплаченные штрафы</span>
+                </span>
+                
+              </div>
+              <img src="img/white_logo.png" alt="white_logo">
+            </div>
+          </div>
+          <div class="dolgi-item">
+            <div class="dolgi-wrapper">
+              <h2>Долги физического лица которые НЕЛЬЗЯ списать:</h2>
+              <div class="dolgi-text">
+                <span>
+                  <span class="mult">×</span><span>Алименты</span>
+                </span>
+                <span>
+                  <span class="mult">×</span><span>Субсидиарные задолженности</span>
+                </span>
+                <span>
+                  <span class="mult">×</span><span>Платежи после процедуры банкротства</span>
+                </span>
+                <span>
+                  <span class="mult">×</span><span>Выплаты заработной платы или выходных пособий сотрудникам работавшим на вас</span>
+                </span>
+                <span>
+                  <span class="mult">×</span><span>Выплаты за нанесенный ущерб</span>
+                </span>
+              </div>
+              <img src="img/white_logo.png" alt="white_logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
       
-      <p>sasa</p>
+      
+      
 
       @@include('html/footer.html',{})
-    </div>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/libphonenumber-js/1.9.6/libphonenumber-js.min.js"></script>
+    <script>
+      var input = document.querySelector("#phone");
+      var iti = window.intlTelInput(input, {
+        initialCountry: "ru",
+        separateDialCode: true,
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+      });
 
+      // Пример данных о максимальной длине номера для некоторых стран
+      var countryMaxLengths = {
+        "ru": 16, // Россия
+        "us": 10, // США
+        "ua": 9,  // Украина
+        "kz": 10  // Казахстан
+      };
+
+      input.addEventListener('input', function () {
+        var countryData = iti.getSelectedCountryData();
+        var countryCode = countryData.iso2;
+        var maxLength = countryMaxLengths[countryCode] || 15; // По умолчанию 15 символов
+        input.setAttribute('maxlength', maxLength);
+
+        var number = iti.getNumber();
+        var formattedNumber = new libphonenumber.AsYouType(countryCode).input(number);
+        input.value = formattedNumber;
+      });
+
+      input.addEventListener('keydown', function (event) {
+        // Разрешаем только цифры и управляющие клавиши
+        if (!/[0-9]|Backspace|ArrowLeft|ArrowRight|Delete|Tab/.test(event.key)) {
+          event.preventDefault();
+        }
+      });
+    </script>
     <script type="text/javascript" src="js/app.min.js"></script>
   </body>
 </html>
