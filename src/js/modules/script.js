@@ -45,6 +45,7 @@ burgerMenu.addEventListener('click', () => {
   contactInfo.classList.toggle('active');
   burgerMenu.classList.toggle('open');
   body.classList.toggle('blur');
+  body.classList.toggle('showmenu');
 });
 
 // Получаем все элементы с классом dropdown
