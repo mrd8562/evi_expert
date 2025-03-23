@@ -191,7 +191,7 @@ p {
 	position: absolute;
 	max-width: 690px;
 	right: -90px;
-	bottom: -260px;
+	bottom: -105px;
 }
 
 
@@ -1007,9 +1007,13 @@ p {
 	.main-screen .container {
 		padding-top: 107px;
 	}
+	.main-screen .container.page-wrapper {
+		padding-top: 200px;
+		padding-bottom: 143px;
+	}
 	.man-block {
 		right: -150px;
-		bottom: -175px;
+		bottom: -85px;
 		max-width: 580px;
 		opacity: 0.3;
 	}
@@ -1387,6 +1391,9 @@ p {
 	.man-block {
 		display: none;
 	}
+	.main-screen .container.page-wrapper {
+		padding-bottom: 126px;
+	}
 	.buttons-block {
 		flex-direction: column;
 		gap: 30px;
@@ -1676,6 +1683,10 @@ p {
 	}
 	.main-screen .container {
 		padding-top: 90px;
+	}
+	.main-screen .container.page-wrapper {
+		padding-top: 139px;
+		padding-bottom: 30px;
 	}
 	.container.page-wrapper {
 		padding: 40px 15px;
