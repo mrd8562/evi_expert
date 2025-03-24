@@ -166,13 +166,11 @@ p {
 .main__text-block {
 	margin-bottom: 46px;
 }
-
 .bg-green {
-  background-color: #5ec96b;
+	background-color: #5ec96b;
 	border-radius: 8px;
 	padding: 0 4px;
 }
-
 .buttons-block {
 	margin-bottom: 30px;
 	display: flex;
@@ -228,6 +226,15 @@ p {
 	color: #202928;
 	display: flex;
 	align-items: flex-start;
+}
+
+.reason .svg__icons {
+	margin-top: 6px;
+	margin-right: 10px;
+	width: 17px;
+	height: 17px;
+	fill: #01B055;
+	flex-shrink: 0;
 }
 
 .checkmark {
@@ -535,6 +542,7 @@ p {
 	align-items: center;
 	justify-content: center;
 	color: #fff;
+	flex-shrink: 0;
 }
 
 .step-line {
@@ -625,8 +633,14 @@ p {
 	text-align: center;
 	line-height: 25px;
 }
-.dolgi-wrapper .dolgi-text > span .checkmark {
-	color: #5EC991;
+
+.dolgi-wrapper .dolgi-text > span .svg__icons.okey {
+	fill: #5EC991;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	flex-shrink: 0;
+	vertical-align: top;
 }
 
 .dolgi-wrapper img {
@@ -635,10 +649,16 @@ p {
 	bottom: 0;
 }
 
-.dolgi-wrapper .dolgi-text > span .mult {
-	color: #B32424;
+.dolgi-wrapper .dolgi-text > span .svg__icons.close {
+	fill: #B32424;
+	width: 20px;
+	height: 20px;
 	margin-right: 10px;
+	flex-shrink: 0;
+	vertical-align: top;
 }
+
+
 
 
 
@@ -653,7 +673,7 @@ p {
 .Gfaq {
 	max-width: 1240px;
 	margin: 0 auto;
-	padding: 60px 0 120px;
+	padding: 145px 0 120px;
 
 	.svg__icons {
 		width: 18px;
@@ -1338,7 +1358,7 @@ p {
 	}
 
 	.iti {
-		width: 100%;
+		width: 92%;
 		padding: 10px;
 		order: 1;
 	}
@@ -1481,6 +1501,15 @@ p {
 	.dolgi .container.page-wrapper {
 		padding: 50px 45px;
 	}
+	.iti-mobile .iti--container {
+		top: 20px;
+		bottom: 20px;
+		left: 20px;
+		right: 20px;
+	}
+	.iti {
+		width: 94%;
+	}
 }
 
 @media (max-width: 550px) {
@@ -1592,6 +1621,10 @@ p {
 	.footer-element:last-child .info .info-item:nth-child(3) {
 		margin-bottom: 34px;
 	}
+
+	.iti {
+		width: 92%;
+	} 
 }
 
 @media (max-width: 420px) {
@@ -1650,9 +1683,6 @@ p {
 	.stage-block .stage-element {
 		gap: 12px;
 	}
-	.stage-block .stage-element .number {
-		width: 45px;
-	}
 	.stage-block .stage-element p {
 		width: 100%;
 	}
@@ -1670,6 +1700,17 @@ p {
 	.footer .links-two {
 		flex-direction: column;
 		gap: 10px;
+	}
+}
+@media (min-width: 390px) {
+	.bg-green:first-child {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.bg-green:last-child {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
 	}
 }
 @media (max-width: 340px) {
@@ -1720,4 +1761,7 @@ p {
 	.stage .lite-font {
 		font-size: 13px;
 	}
+	.iti {
+		width: 89%;
+	} 
 }
