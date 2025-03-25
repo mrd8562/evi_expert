@@ -711,14 +711,10 @@ p {
 /// FAQ Page
 /// 
 
-.Gpage {
-	// margin: 8px 10px;
-}
-
-.Gfaq {
+.gfaq {
 	max-width: 1240px;
 	margin: 0 auto;
-	padding: 145px 0 120px;
+	padding: 145px 0 90px;
 
 	.svg__icons {
 		width: 18px;
@@ -732,6 +728,7 @@ p {
 		font-weight: 400;
 		text-align: center;
 		color: #202928;
+    margin-bottom: 60px;
 	}
 
 	&__list {
@@ -745,16 +742,16 @@ p {
 		border-radius: 10px;
 		overflow: hidden;
 		box-shadow: 0px 0px 31.5px 0px #0000001A;
-		.Gfaq__open {
+		.gfaq__open {
 			display: block;
 		}
 
-		.Gfaq__close {
+		.gfaq__close {
 			display: none;
 		}
 
 		&--active {
-			.Gfaq__question {
+			.gfaq__question {
 				background: #01B055;
 				color: #fff;
 			}
@@ -764,16 +761,17 @@ p {
 				transform: rotate(225deg);
 			}
 
-			.Gfaq__open {
+			.gfaq__open {
 				display: none;
 			}
 
-			.Gfaq__close {
+			.gfaq__close {
 				display: block;
 			}
 
-			.Gfaq__answer {
-				max-height: 100%;
+			.gfaq__answer {
+        padding: 20px 92px 20px 20px;
+        max-height: 100%;
 			}
 		}
 	}
@@ -781,111 +779,32 @@ p {
 	&__question {
 		width: 100%;
 		background: #fff;
-		border: none;
-		text-align: left;
-		cursor: pointer;
-		display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
 		justify-content: space-between;
 		align-items: center;
 		color: #202928;
 		font-family: 'NormalidadCompact', sans-serif;
 		font-weight: 500;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    transition: all 0.3s ease;
 	}
 
 	&__answer {
 		overflow: hidden;
 		background: #fff;
 		font-family: 'NormalidadVar', sans-serif;
-		font-weight: 403;
 		max-height: 0;
+    font-size: 20px;
 		line-height: 30px;
-		transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    padding: 0 92px 0 20px;
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
 		p {
-			font-size: inherit;
-			line-height: inherit;
-			margin-bottom: 0;
-		}
-	}
-
-	@media (min-width: 1024px) {
-		&__title {
-			font-size: 30px;
-			margin-bottom: 30px;
-		}
-	}
-	@media (max-width: 1023px) {
-		&__title {
-			font-size: 25px;
-		}
-	}
-
-	@media (min-width: 320px) {
-		&__title {
-			font-size: 30px;
-			margin-bottom: 20px;
-		}
-
-		&__question {
-			padding: 14px;
-			font-size: 15px;
-		}
-
-		&__open {
-			height: 19px;
-		}
-
-		&__close {
-			height: 15px;
-		}
-
-		&__answer {
-			font-size: 15px;
-			padding: 0px 25px 15px 14px;
-		}
-	}
-
-	@media (min-width: 480px) {
-		&__title {
-			margin-bottom: 24px;
-		}
-	}
-
-	@media (min-width: 640px) {
-		// padding: 0 14px;
-
-		&__title {
-			margin-bottom: 28px;
-		}
-	}
-
-	@media (min-width: 960px) {
-		// padding: 0 24px;
-	}
-
-	@media (min-width: 1240px) {
-		&__title {
-			font-size: 34px;
-			margin-bottom: 30px;
-		}
-
-		&__question {
-			padding: 20px;
 			font-size: 20px;
 			line-height: 30px;
-		}
-
-		&__open {
-			height: 22px;
-		}
-
-		&__close {
-			height: 18px;
-		}
-
-		&__answer {
-			font-size: 20px;
-			padding: 20px 92px 20px 21px;
+			margin-bottom: 0;
 		}
 	}
 }
@@ -2001,6 +1920,34 @@ p {
     left: 27%;
     top: 44%;
   }
+
+  .gfaq {
+    padding-top: 135px;
+    padding-bottom: 50px;
+  }
+
+  .gfaq__title {
+    margin-bottom: 40px;
+  }
+
+  .gfaq__answer {
+    padding: 0 33px 0 10px;
+  }
+  .gfaq__item--active .gfaq__answer {
+    padding: 10px 33px 10px 10px;
+  }
+  .gfaq__question {
+    padding: 10px;
+  }
+  .gfaq__question,
+  .gfaq__answer p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .gfaq__list {
+    gap: 20px;
+  }
 }
 
 @media (max-width: 945px) {
@@ -2290,6 +2237,23 @@ p {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
+  .gfaq {
+    padding-top: 105px;
+    padding-bottom: 32px;
+  }
+
+  .gfaq__answer {
+    padding: 0 10px;
+  }
+
+  .gfaq__item--active .gfaq__answer {
+    padding: 10px;
+  }
+
+  .gfaq__question {
+    gap: 10px;
+  }
 }
 
 @media (max-width: 589px) {
@@ -2483,6 +2447,11 @@ p {
 
   .services__dolzhnik p {
     margin-bottom: 20px;
+  }
+
+  .gfaq {
+    padding-top: 95px;
+    padding-bottom: 35px;
   }
 }
 
@@ -2684,5 +2653,10 @@ p {
   .services__perechen .perechen-text .perechen-description {
     font-size: 16px;
     line-height: 27px;
+  }
+
+  .gfaq {
+    padding-top: 75px;
+    padding-bottom: 25px;
   }
 }

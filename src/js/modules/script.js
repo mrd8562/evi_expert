@@ -73,27 +73,29 @@ dropdowns.forEach(dropdown => {
 });
 
 
-document.querySelectorAll('.Gfaq__question').forEach(button => {
+// Faq
+document.querySelectorAll('.gfaq__question').forEach(button => {
   button.addEventListener('click', () => {
     const item = button.parentElement;
-    const answer = item.querySelector('.Gfaq__answer');
+    const answer = item.querySelector('.gfaq__answer');
 
-    if (item.classList.contains('Gfaq__item--active')) {
+    if (item.classList.contains('gfaq__item--active')) {
         answer.style.maxHeight = null;
-        item.classList.remove('Gfaq__item--active');
+        item.classList.remove('gfaq__item--active');
     } else {
-        document.querySelectorAll('.Gfaq__item--active').forEach(activeItem => {
-            activeItem.querySelector('.Gfaq__answer').style.maxHeight = null;
-            activeItem.classList.remove('Gfaq__item--active');
+        document.querySelectorAll('.gfaq__item--active').forEach(activeItem => {
+            activeItem.querySelector('.gfaq__answer').style.maxHeight = null;
+            activeItem.classList.remove('gfaq__item--active');
         });
 
-        answer.style.maxHeight = answer.scrollHeight + "px";
-        item.classList.add('Gfaq__item--active');
+        answer.style.maxHeight = answer.scrollHeight+40 + "px";
+        item.classList.add('gfaq__item--active');
     }
   });
 });
 
 
+// Line Services Urlica
 if (document.querySelector('.line-one')) {
   function replaceImagesOnResize() {
     const lineOne = document.querySelector('.line-one');
