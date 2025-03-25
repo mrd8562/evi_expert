@@ -725,6 +725,7 @@ p {
 		height: 18px;
 		fill: #01B055;
 		transition: all 0.3s ease;
+		flex-shrink: 0;
 	}
 	&__title {
 		font-family: 'RobotoSlab', sans-serif;
@@ -736,7 +737,7 @@ p {
 	&__list {
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
+		gap: 30px;
 	}
 
 	&__item {
@@ -783,26 +784,42 @@ p {
 		border: none;
 		text-align: left;
 		cursor: pointer;
-		display: flex;
+		display: grid;
+    grid-template-columns: 1fr auto;
 		justify-content: space-between;
 		align-items: center;
 		color: #202928;
 		font-family: 'NormalidadCompact', sans-serif;
 		font-weight: 500;
-
-		img {
-			margin-left: 8px;
-		}
 	}
 
 	&__answer {
 		overflow: hidden;
 		background: #fff;
+		font-family: 'NormalidadVar', sans-serif;
 		font-weight: 403;
 		max-height: 0;
-		line-height: 157%;
+		line-height: 30px;
 		transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+		p {
+			font-size: inherit;
+			line-height: inherit;
+			margin-bottom: 0;
+		}
 	}
+
+	@media (min-width: 1024px) {
+		&__title {
+			font-size: 30px;
+			margin-bottom: 30px;
+		}
+	}
+	@media (max-width: 1023px) {
+		&__title {
+			font-size: 25px;
+		}
+	}
+
 	@media (min-width: 320px) {
 		&__title {
 			font-size: 30px;
@@ -867,8 +884,8 @@ p {
 		}
 
 		&__answer {
-			font-size: 16px;
-			padding: 0 50px 0 20px;
+			font-size: 20px;
+			padding: 20px 92px 20px 21px;
 		}
 	}
 }
