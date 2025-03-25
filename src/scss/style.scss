@@ -100,6 +100,51 @@
 	box-shadow: 0px 4px 12.5px 0px #00000040 inset;
 }
 
+.button.perechen-bg {
+  background-color: #07803C;
+  box-shadow: 0px 4px 12.5px 0px #00000040 inset;
+  color: #fff;
+  border-radius: 10px;
+  padding: 21px 24px;
+}
+
+.button.perechen-bg:hover {
+  background-color: #01B055;
+  color: #fff;
+}
+
+.button.whatsapp-bg {
+  background-color: #4CC75B;
+  color: #fff;
+  border: 1px solid #4CC75B;
+  border-radius: 10px;
+  padding: 21px 27px;
+  box-shadow: 0px 4px 12.5px 0px #00000040 inset;
+}
+
+.button.whatsapp-bg:hover {
+  border: 1px solid #4CC75B;
+  background-color: initial;
+  box-shadow: none;
+  color: #000;
+}
+
+.button.telegram-bg {
+  background-color: #28A4E4;
+  color: #fff;
+  border: 1px solid #28A4E4;
+  border-radius: 10px;
+  padding: 21px 30px;
+  box-shadow: 0px 4px 12.5px 0px #00000040 inset;
+}
+
+.button.telegram-bg:hover {
+  border: 1px solid #28A4E4;
+  background-color: initial;
+  box-shadow: none;
+  color: #000;
+}
+
 body {
 	font-family: 'NormalidadCompact', sans-serif;
 	position: relative;
@@ -758,7 +803,6 @@ p {
 		line-height: 157%;
 		transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
 	}
-
 	@media (min-width: 320px) {
 		&__title {
 			font-size: 30px;
@@ -829,6 +873,406 @@ p {
 	}
 }
 
+
+
+
+// Services fizlica
+
+.main-services .container.page-wrapper {
+	padding-top: 180px;
+	padding-bottom: 60px;
+}
+
+.main-services h2 {
+	margin-bottom: 60px;
+}
+
+.main-services h1 {
+	font-family: "NormalidadCompact", sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.main-services p {
+	font-family: 'NormalidadVar', sans-serif;
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.services__information {
+	background: url('../img/abstact-bg.jpg') center center / cover no-repeat;
+	position: relative;
+}
+
+.services__information::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-color: #01B055AD;
+	z-index: 0;
+}
+
+.services__information .container.page-wrapper {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.services__information .services__text {
+	position: relative;
+	z-index: 1;
+}
+
+.services__information .services__text p {
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 30px;
+	color: #fff;
+	max-width: 922px;
+}
+
+.services__information .services__text img {
+	position: absolute;
+	max-width: 175px;
+	width: 100%;
+	top: -60px;
+	right: 100px;
+	transform: rotate(10deg);
+}
+
+// Procedure
+
+.services__procedure .container.page-wrapper {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.services__procedure h2 {
+	font-family: "NormalidadCompact", sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 40px;
+	margin-bottom: 20px;
+	max-width: 50%;
+}
+
+.services__procedure .services__procedure-block {
+	display: flex;
+	gap: 32px;
+}
+
+.services__procedure .services__procedure-block .procedure-block {
+	width: 50%;
+}
+
+.services__procedure-block .procedure-block .element-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	border: 1px solid #D6CBC1;
+	background-color: #FBF7F7;
+	padding: 25px;
+	border-radius: 15px;
+	margin-bottom: 30px;
+}
+
+.services__procedure-block .procedure-block .element-wrapper .procedure-text .procedure-title{
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 500;
+	color: #01B055;
+	margin-bottom: 10px;
+}
+
+.services__procedure-block .procedure-block .element-wrapper .procedure-text .procedure-description {
+	font-family: 'NormalidadVar', sans-serif;
+	font-size: 20px;
+	line-height: 28px;
+	color: #202928;
+	margin-bottom: 0px;
+}
+
+.services__procedure-block .procedure-block .element-wrapper:last-child {
+	margin-bottom: 0;
+}
+
+.procedure-block .element-wrapper .procedure-img {
+	width: 50px;
+}
+
+.procedure-block .element-wrapper .procedure-img .svg__icons {
+	width: 50px;
+	height: 50px;
+	fill: #5EC991;
+}
+
+.services__procedure .services__procedure-block .procedure-image {
+	width: 50%;
+	position: relative;
+}
+
+.services__procedure-block .procedure-image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+	filter: brightness(80%);
+}
+
+.services__procedure-block .procedure-image::after {
+	content: '';
+	position: absolute;
+	width: 98%;
+	border: 1px solid #01B055;
+	border-radius: 15px;
+	top: 5px;
+	left: 5px;
+	height: 98%;
+}
+
+.sevices__summa {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.services__summa-block {
+	display: flex;
+	gap: 100px;
+  margin-bottom: 60px;
+}
+
+.services__summa-block .summa-block h2 {
+	max-width: 100%;
+}
+
+.services__summa-block .summa-block {
+	width: 50%;
+}
+
+.services__summa-block .summa-block .summa-block-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.services__summa-block .summa-block .element-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	max-width: 475px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 31.5px 0px #0000001A;
+	padding: 16px 35px 16px 25px;
+}
+
+.services__summa-block .summa-block .element-wrapper .summa-title {
+	font-size: 20px;
+	line-height: 32px;
+	font-weight: 500;
+	color: #01B055;
+	margin-bottom: 0;
+}
+
+.services__summa-block .summa-block .element-wrapper .summa-description {
+	font-family: 'NormalidadVar', sans-serif;
+	font-size: 20px;
+	line-height: 32px;
+	color: #202928;
+}
+
+.services__summa-block .summa-block .element-image img {
+	max-width: 475px;
+	width: 100%;
+	height: 111px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.services__summa-block .summa-block.second h2 {
+  margin-bottom: 20px;
+}
+
+.services__summa-block .summa-block.second p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  color: #5D6362;
+  margin-bottom: 20px;
+}
+
+.services__summa-block .summa-block.second li {
+  display: flex;
+  gap: 13px;
+  margin-bottom: 32px;
+}
+
+.services__summa-block .summa-block.second li:last-child {
+  margin-bottom: 0;
+}
+
+.services__summa-block .summa-block.second li .svg__icons {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  margin-top: 6px;
+  fill: #01B055;
+}
+
+.services__summa-block .summa-block.second li span {
+  font-family: 'NormalidadVar', sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.sevices__summa .buttons-block {
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 0;
+}
+
+
+// Perechen
+
+.services__perechen {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+      url(../img/bookshelfs.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 20px;
+  padding: 40px 70px 40px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services__perechen::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  border-radius: 20px;
+  background-color: #00ac42d8;
+  z-index: 0;
+}
+
+.services__perechen h2 {
+  max-width: 100%;
+  color: #fff;
+}
+
+.services__perechen .perechen-text,
+.services__perechen img,
+.services__perechen a {
+  position: relative;
+  z-index: 1;
+}
+
+.services__perechen .perechen-text .perechen-description {
+  font-size: 21px;
+  line-height: 31px;
+  font-weight: 300;
+  color: #fff;
+  max-width: 570px;
+  margin: 0;
+}
+
+.services__perechen img {
+  position: absolute;
+  right: 370px;
+}
+
+.services__perechen .button.perechen-bg {
+  display: inline-block;
+  text-align: center;
+  width: 270px;
+}
+
+
+// dolzhnik
+
+.services__dolzhnik {
+  background: #FBF7F7;
+}
+
+.services__dolzhnik .container.page-wrapper {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.services__dolzhnik h2 {
+  font-weight: 500;
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+.services__dolzhnik p {
+  text-align: center;
+  color: #5D6362;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.dolzhnik-line-block {
+  position: relative;
+}
+
+.dolzhnik-line-block .dolzhnik-element {
+  background-color: #fff;
+  box-shadow: 0px 0px 31.5px 0px #0000001A;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 562px;
+  margin-bottom: 20px;
+}
+
+.dolzhnik-line-block .dolzhnik-element.two {
+  margin-left: auto;
+  margin-right: 56px;
+  position: relative;
+  z-index: 1;
+}
+
+.dolzhnik-line-block .dolzhnik-element p {
+  margin: 0;
+  color: #202928;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.dolzhnik-line-block .dolzhnik-element p .brown {
+  color: #B36A3C;
+}
+
+.dolzhnik-line-block img {
+  position: absolute;
+}
+
+.dolzhnik-line-block .line-one {
+  top: 30%;
+  right: 49%;
+}
+
+.dolzhnik-line-block .line-two {
+  top: 63%;
+  left: 60%;
+}
+
+.dolzhnik-line-block .dolzhnik-element.tree {
+  margin-right: auto;
+  margin-left: 200px;
+  position: relative;
+  z-index: 1;
+}
 
 
 
@@ -991,7 +1435,19 @@ p {
 		width: 250px;
 		padding: 21px 20px;
 	}
+	.services__information .services__text img {
+		right: 0;
+	}
 }
+
+@media (max-width: 1275px) {
+  .services__perechen img {
+    max-width: 115px;
+    right: 342px;
+  }
+}
+
+
 @media (max-width: 1225px) {
 	.man-block {
 		right: -190px;
@@ -1259,6 +1715,153 @@ p {
 	.footer-element .footer-menu li {
 		margin-right: 0;
 	}
+	.main-services .container.page-wrapper {
+		padding-top: 170px;
+		padding-bottom: 30px;
+	}
+	.main-services h2 {
+		margin-bottom: 30px;
+	}
+	.main-services h1 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.main-services p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.services__information .container.page-wrapper {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.services__information .services__text p {
+		max-width: 700px;
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.services__information .services__text img {
+		max-width: 118px;
+		top: -30px;
+	}
+
+	.services__procedure h2 {
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 30px;
+		max-width: 60%;
+	}
+
+	.services__procedure .container.page-wrapper {
+		padding-top: 80px;
+    padding-bottom: 80px;
+	}
+
+	.services__procedure-block .procedure-block .element-wrapper {
+		gap: 20px;
+		padding: 10px;
+		margin-bottom: 20px;
+	}
+
+	.procedure-block .element-wrapper .procedure-img .svg__icons,
+	.procedure-block .element-wrapper .procedure-img {
+		width: 35px;
+	}
+
+	.services__procedure .services__procedure-block .procedure-block {
+		width: 60%;
+	}
+
+	.services__procedure .services__procedure-block .procedure-image {
+		width: 40%;
+	}
+
+	.services__procedure-block .procedure-block .element-wrapper .procedure-text .procedure-title,
+	.services__procedure-block .procedure-block .element-wrapper .procedure-text .procedure-description {
+		font-size: 16px;
+		line-height: 23px;
+		margin-bottom: 0;
+	}
+
+	.services__procedure .services__procedure-block {
+		gap: 45px;
+	}
+
+  .sevices__summa {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .services__summa-block {
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .services__summa-block .summa-block.second h2 {
+    margin-bottom: 30px;
+  }
+
+  .services__summa-block .summa-block .element-wrapper {
+    padding: 10px;
+  }
+
+  .services__summa-block .summa-block .element-wrapper .summa-title {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .services__summa-block .summa-block .element-wrapper .summa-description {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .services__summa-block .summa-block .element-image img {
+    height: 90px;
+  }
+
+  .services__summa-block .summa-block.second p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 12px;
+  }
+
+  .services__summa-block .summa-block.second li span {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .services__summa-block .summa-block.second li {
+    margin-bottom: 10px;
+  }
+
+  .services__perechen {
+    padding: 20px;
+  }
+
+  .services__perechen h2 {
+    max-width: 100%;
+    margin-bottom: 6px;
+  }
+
+  .services__perechen .perechen-text .perechen-description {
+    font-size: 17px;
+    line-height: 27px;
+    max-width: 420px;
+  }
+
+  .services__perechen .button.perechen-bg {
+    width: 245px;
+  }
+
+  .services__perechen img {
+    right: 280px;
+    max-width: 138px;
+  }
+
+  .dolzhnik-line-block .line-two {
+    left: 70%;
+  }
 }
 
 @media (max-width: 960px) {
@@ -1331,6 +1934,56 @@ p {
 	.footer-element .info .info-item:last-child {
 		text-align: left;
 	}
+	.services__information .services__text p {
+		max-width: 600px;
+	}
+
+  .services__dolzhnik h2 {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 550px;
+  }
+
+  .services__dolzhnik p {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 630px;
+    margin-bottom: 30px;
+  }
+
+  .dolzhnik-line-block .dolzhnik-element {
+    padding: 10px;
+    z-index: 1;
+    position: relative;
+  }
+
+  .dolzhnik-line-block .dolzhnik-element p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .dolzhnik-line-block .dolzhnik-element.two {
+    max-width: 380px;
+  }
+
+  .dolzhnik-line-block .dolzhnik-element.tree {
+    margin-left: 50px;
+  }
+
+  .services__dolzhnik .container.page-wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .dolzhnik-line-block .line-one {
+    top: 19%;
+    right: 29%;
+  }
+
+  .dolzhnik-line-block .line-two {
+    left: 27%;
+    top: 44%;
+  }
 }
 
 @media (max-width: 945px) {
@@ -1345,6 +1998,41 @@ p {
 	.form-container .contact-form input[type=text] {
 		width: 210px;
 	}
+
+  .services__perechen img {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .dolzhnik-line-block img {
+    display: none;
+  }
+  .dolzhnik-line-block .dolzhnik-element {
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+    max-width: 100% !important;
+  }
+  .dolzhnik-line-block .dolzhnik-element p {
+    max-width: 100%;
+  }
+  .dolzhnik-line-block .dolzhnik-element p br {
+    display: none;
+  }
+}
+
+@media (max-width: 876px) {
+  .page-wrapper {
+    padding: 28px 45px;
+  }
+
+  .services__information .services__text p {
+    max-width: 100%;
+  }
+
+  .services__information .services__text img {
+    display: none;
+  }
 }
 
 @media (max-width: 835px) {
@@ -1378,18 +2066,77 @@ p {
 	.key-item {
 		width: 47%;
 	}
+
+  .services__perechen {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
 }
 
-@media (max-width: 876px) {
-	.page-wrapper {
-		padding: 28px 45px;
-	}
-}
 @media (max-width: 780px) {
 	.check-bg {
 		background-size: 85%;
 	}
+	.services__procedure .container.page-wrapper {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.services__procedure h2 {
+		max-width: 100%;
+	}
+
+	.services__procedure .services__procedure-block {
+		flex-wrap: wrap;
+	}
+
+	.services__procedure .services__procedure-block .procedure-block,
+	.services__procedure .services__procedure-block .procedure-image {
+		width: 100%;
+	}
+
+	.services__procedure .services__procedure-block .procedure-image {
+		height: 200px;
+	}
+
+	.services__procedure-block .procedure-image::after {
+		height: 94%;
+	}
+
+  .sevices__summa {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .services__summa-block {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  .services__summa-block .summa-block {
+    width: 100%;
+  }
+
+  .services__summa-block .summa-block .element-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+  .services__summa-block .summa-block .element-image img {
+    max-width: 100%;
+    height: 110px;
+  }
+
+  .services__summa-block .summa-block.second h2 {
+    margin-bottom: 20px;
+  }
+  .sevices__summa .buttons-block a {
+    width: 100%;
+    text-align: center;
+  }
 }
+
+
 @media (max-width: 680px) {
 	.stage-block .stage-element::after {
 		height: 194px;
@@ -1398,6 +2145,8 @@ p {
 		height: 230px;
 	}
 }
+
+
 @media (max-width: 640px) {
 	.main-screen {
 		min-height: 771px;
@@ -1510,6 +2259,26 @@ p {
 	.iti {
 		width: 94%;
 	}
+
+	.main-services .container.page-wrapper {
+		padding-top: 140px;
+	}
+	
+	.services__information .services__text p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+  .services__dolzhnik .container.page-wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 589px) {
+	.key-item {
+		width: 100%;
+	}
 }
 
 @media (max-width: 550px) {
@@ -1528,12 +2297,13 @@ p {
 	.footer-element:last-child .info .info-item:nth-child(1) {
 		width: 100%;
 	}
-}
-@media (max-width: 589px) {
-	.key-item {
-		width: 100%;
+
+	.services__information .services__text p {
+		font-size: 15px;
+		line-height: 25px;
 	}
 }
+
 
 @media (min-width: 480px) {
 	.footer .links-two {
@@ -1625,6 +2395,78 @@ p {
 	.iti {
 		width: 92%;
 	} 
+
+	.main-services .container.page-wrapper {
+		padding-top: 130px;
+	}
+	.main-services p {
+		font-size: 15px;
+		line-height: 23px;
+	}
+
+	.services__procedure h2 {
+		max-width: 380px;
+	}
+
+	.services__procedure-block .procedure-block .element-wrapper .procedure-text .procedure-title {
+		font-size: 15px;
+		line-height: 22px;
+		margin-bottom: 2px;
+	}
+
+	.services__procedure-block .procedure-block .element-wrapper .procedure-text .procedure-description {
+		font-size: 15px;
+		line-height: 22px;
+	}
+
+	.services__procedure .services__procedure-block {
+		gap: 20px;
+	}
+
+	.services__procedure .services__procedure-block .procedure-image {
+		height: 160px;
+	}
+
+  .services__summa-block .summa-block.second p,
+  .services__summa-block .summa-block.second li span {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .services__summa-block {
+    margin-bottom: 30px;
+  }
+
+  .services__perechen { 
+    text-align: left;
+    padding: 20px 20px 36px;
+  }
+
+  .services__perechen .button,
+  .services__perechen .button.perechen-bg {
+    width: 100%;
+  }
+
+  .services__perechen h2 {
+    margin-bottom: 10px;
+    text-align: left !important;
+  }
+
+  .services__dolzhnik p,
+  .dolzhnik-line-block .dolzhnik-element p {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .services__dolzhnik h2 {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+
+  .services__dolzhnik p {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -1764,4 +2606,66 @@ p {
 	.iti {
 		width: 89%;
 	} 
+	.main-services .container.page-wrapper {
+		text-align: center;
+		padding-top: 110px;
+		padding-bottom: 20px;
+	}
+	.main-services h1 {
+		font-size: 18px;
+		line-height: 22px;
+		margin-bottom: 20px;
+	}
+
+	.services__information .services__text p {
+		font-size: 13px;
+		line-height: 23px;
+	}
+
+	.services__procedure h2 {
+		font-size: 18px;
+		line-height: 24px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.services__procedure-block .procedure-block .element-wrapper {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0px;
+	}
+
+	.services__procedure-block .procedure-block .element-wrapper .procedure-text {
+		text-align: center;
+	}
+	.services__procedure-block .procedure-block .element-wrapper .procedure-text .procedure-title {
+		margin-bottom: 10px;
+	}
+
+  .sevices__summa {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .services__procedure .sevices__summa h2 {
+    text-align: left;
+  }
+
+  .services__summa-block .summa-block .element-wrapper {
+    gap: 12px;
+  }
+
+  .services__summa-block .summa-block .element-wrapper .summa-title {
+    font-size: 14px;
+    line-height: 27px;
+  }
+
+  .sevices__summa .buttons-block {
+    gap: 20px;
+  }
+
+  .services__perechen .perechen-text .perechen-description {
+    font-size: 16px;
+    line-height: 27px;
+  }
 }

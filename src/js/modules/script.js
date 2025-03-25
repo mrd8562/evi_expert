@@ -93,3 +93,30 @@ document.querySelectorAll('.Gfaq__question').forEach(button => {
   });
 });
 
+
+if (document.querySelector('.line-one')) {
+  function replaceImagesOnResize() {
+    const lineOne = document.querySelector('.line-one');
+    const lineTwo = document.querySelector('.line-two');
+    const desktopImgOne = 'img/line_one.png';
+    const mobileImgOne = lineOne.getAttribute('data-mobile');
+    const desktopImgTwo = 'img/line_two.png';
+    const mobileImgTwo = lineTwo.getAttribute('data-mobile');
+
+    if (window.innerWidth <= 960) {
+      lineOne.src = mobileImgOne;
+      lineTwo.src = mobileImgTwo;
+    } else {
+      lineOne.src = desktopImgOne;
+      lineTwo.src = desktopImgTwo;
+    }
+  }
+
+  // Запускаем при загрузке страницы
+  document.addEventListener('DOMContentLoaded', replaceImagesOnResize);
+
+  // Обновляем при изменении размера окна
+  window.addEventListener('resize', replaceImagesOnResize);
+}
+
+
