@@ -714,7 +714,7 @@ p {
 .gfaq {
 	max-width: 1240px;
 	margin: 0 auto;
-	padding: 145px 0 90px;
+	padding: 150px 0 90px;
 
 	.svg__icons {
 		width: 18px;
@@ -728,13 +728,13 @@ p {
 		font-weight: 400;
 		text-align: center;
 		color: #202928;
-    margin-bottom: 60px;
+    margin-bottom: 65px;
 	}
 
 	&__list {
 		display: flex;
 		flex-direction: column;
-		gap: 30px;
+		gap: 31px;
 	}
 
 	&__item {
@@ -785,7 +785,7 @@ p {
 		color: #202928;
 		font-family: 'NormalidadCompact', sans-serif;
 		font-weight: 500;
-    padding: 20px;
+    padding: 20px 23px 20px 20px;
     font-size: 20px;
     line-height: 30px;
     text-align: left;
@@ -803,7 +803,7 @@ p {
     transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
 		p {
 			font-size: 20px;
-			line-height: 30px;
+			line-height: 31px;
 			margin-bottom: 0;
 		}
 	}
@@ -1922,12 +1922,12 @@ p {
   }
 
   .gfaq {
-    padding-top: 135px;
+    padding-top: 114px;
     padding-bottom: 50px;
   }
 
   .gfaq__title {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
 
   .gfaq__answer {
@@ -1942,7 +1942,7 @@ p {
   .gfaq__question,
   .gfaq__answer p {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 22px;
   }
 
   .gfaq__list {
@@ -2237,11 +2237,19 @@ p {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+	
+	.page-wrapper {
+		padding: 28px 35px;
+	}
 
   .gfaq {
-    padding-top: 105px;
+    padding-top: 67px;
     padding-bottom: 32px;
   }
+
+	.gfaq__title {
+		margin-bottom: 46px;
+	}
 
   .gfaq__answer {
     padding: 0 10px;
@@ -2253,6 +2261,7 @@ p {
 
   .gfaq__question {
     gap: 10px;
+		line-height: 22px;
   }
 }
 
@@ -2294,7 +2303,7 @@ p {
 
 @media (max-width: 480px) {
 	.page-wrapper {
-		padding: 22px 15px;
+		padding: 22px 14px;
 	}
 	.button.call-us {
 		padding: 17px;
@@ -2450,9 +2459,12 @@ p {
   }
 
   .gfaq {
-    padding-top: 95px;
+    padding-top: 65px;
     padding-bottom: 35px;
   }
+	.gfaq__title {
+		margin-bottom: 35px;
+}
 }
 
 @media (max-width: 420px) {
@@ -2548,7 +2560,7 @@ p {
 }
 @media (max-width: 320px) {
 	.page-wrapper {
-		padding: 15px 15px;
+		padding: 15px 25px;
 	}
 	.main-screen .container {
 		padding-top: 90px;
@@ -2656,7 +2668,10 @@ p {
   }
 
   .gfaq {
-    padding-top: 75px;
+    padding-top: 55px;
     padding-bottom: 25px;
   }
+	.gfaq__title {
+		margin-bottom: 25px;
+	}
 }
