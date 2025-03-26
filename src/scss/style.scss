@@ -145,6 +145,19 @@
   color: #000;
 }
 
+.button.takeconsult-bg {
+  background-color: #07803C;
+  color: #fff;
+  border-radius: 10px;
+  padding: 21px 24px;
+}
+
+.button.takeconsult-bg:hover {
+  background-color: initial;
+  color: #fff;
+  border: 1px solid #07803C;
+}
+
 body {
 	font-family: 'NormalidadCompact', sans-serif;
 	position: relative;
@@ -1211,9 +1224,318 @@ p {
 }
 
 
+// Process
+
+.services__process .container.page-wrapper{
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.services__process h2 {
+  margin-bottom: 60px;
+}
+
+.services__process h3 {
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.services__process .gfaq {
+  padding: 0 !important;
+}
+
+.services__process .gfaq__question,
+.services__process .gfaq__answer p {
+  font-size: 17px;
+  line-height: 27px;
+}
+
+.services__process .gfaq__answer {
+  padding: 0 20px;
+}
+
+.services__process .gfaq__item--active .gfaq__answer {
+  padding: 20px;
+}
+
+.services__process .process-info {
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+
+.services__process .process-info .info-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #C5EBD7;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.services__process .process-info .info-item:last-child {
+  border: none;
+}
+
+.services__process .process-info .info-item .info-title {
+  font-size: 23px;
+  line-height: 33px;
+  font-weight: 500;
+  margin-bottom: 0;
+  width: 50%;
+}
+
+.services__process .process-info .info-item .info-title .green {
+  color: #01B055;
+}
+
+.services__process .process-info .info-item .info-description {
+  font-family: 'NormalidadVar', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 0;
+  width: 50%;
+}
+
+.services__process .process-info .info-item ul.info-description li {
+  list-style: disc;
+  margin-left: 30px;
+}
+
+
+// Banron
+
+.services__bankrot {
+  background: linear-gradient(rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.795)), url(../img/bg-nature.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  overflow: hidden;
+}
+
+.services__bankrot .container.page-wrapper {
+  position: relative;
+  height: 100%;
+  padding-top: 75px;
+  padding-bottom: 56px;
+}
+
+.services__bankrot .container.page-wrapper img {
+  position: absolute;
+  top: -160px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.6;
+}
+
+.services__bankrot .container.page-wrapper p {
+  z-index: 1;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  font-size: 21px;
+  line-height: 31px;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+
+// packet
+
+.services__packet h2 {
+  font-family: 'NormalidadCompact', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services__packet .services__list {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 84px;
+}
+
+.services__packet .services__list .list-element {
+  position: relative;
+  max-width: 392px;
+  background-color: #5EC991;
+  border-radius: 10px;
+  box-shadow: 0px 0px 31.5px 0px #0000001A;
+  padding: 42px 25px 40px;
+  text-align: center;
+}
+
+.services__packet .services__list .list-element .list-title {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.services__packet .services__list .list-element .list-description {
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.services__packet .services__list .list-element .list-price {
+  display: inline-block;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.services__packet .services__list .list-element .takeconsult-bg {
+  display: inline-block;
+  border: 1px solid #07803C;
+  max-width: 271px;
+}
+
+.services__packet .services__list .list-element img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+// important
+
+.services__important {
+  padding: 25px 24px 18px;
+  border-radius: 15px;
+  border: 1px dashed #07803C;
+  max-width: 896px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.services__important span {
+  font-weight: 500;
+  font-size: 25px;
+  background-color: #01B055;
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: #fff;
+  position: absolute;
+  top: -23px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.services__important p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+// garantii
+
+.services__garantii {
+  margin-top: 120px;
+}
+
+.services__garantii h2 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.services__garantii .garantii-info {
+  display: flex;
+  gap: 32px;
+}
+
+.services__garantii .garantii-info .garantii-element {
+  width: 50%;
+  position: relative;
+}
 
 
 
+.services__garantii .garantii-info .garantii-element span {
+  display: inline;
+  position: relative;
+  background-color: #5EC96B;
+  padding: 8px;
+  color: #fff;
+  font-size: 23px;
+  line-height: 40px;
+  font-weight: 400;
+  border-radius: 5px;
+  box-decoration-break: clone;
+  filter: url(#gooey-filter);
+}
+
+.services__garantii .garantii-info .garantii-element span::after {
+  content: '';
+  display: block;
+  width: 6px;
+  position: absolute;
+  background-color: inherit;
+  left: 0;
+  top: 13px;
+  bottom: 13px;
+}
+
+
+.services__garantii .garantii-info .garantii-element p {
+  font-family: 'NormalidadVar', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.services__garantii .garantii-info .garantii-element p:last-child {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.services__garantii .garantii-info .garantii-element .man-bg {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.services__garantii .garantii-info .garantii-element .logo-white {
+  position: absolute;
+  z-index: 1;
+  left: 29px;
+  top: 38px
+}
+
+.services__garantii .garantii-info .garantii-element .text-abs {
+  font-weight: 500;
+  display: inline;
+  bottom: 120px;
+  font-size: 25px;
+  box-decoration-break: clone;
+  max-width: 400px;
+  margin-left: 35px;
+  filter: url(#gooey-filter);
+}
+
+.services__garantii .garantii-info .garantii-element .text-abs::after {
+  content: '';
+  display: block;
+  width: 6px;
+  position: absolute;
+  background-color: inherit;
+  left: 0;
+  top: 13px;
+  bottom: 13px;
+}
 
 
 
@@ -1397,6 +1719,57 @@ p {
 	.form-container .contact-form input[type=text] {
 		width: 310px;
 	}
+}
+
+@media (max-width: 1185px) {
+  .services__garantii .garantii-info {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .services__garantii .garantii-info .garantii-element {
+    width: 100%;
+  }
+
+  .services__garantii .garantii-info .garantii-element.second .man-bg{
+    height: 173px;
+    width: 100%;
+    object-position: 50% 81%;
+  }
+
+  .services__garantii .garantii-info .garantii-element .logo-white {
+    top: 40px;
+    left: 42px;
+  }
+
+  .services__garantii h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .services__garantii .garantii-info .garantii-element.second .abs {
+    position: absolute;
+    right: 57px;
+  }
+
+  .services__garantii .garantii-info .garantii-element span {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .services__garantii .garantii-info .garantii-element p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .services__garantii .garantii-info .garantii-element .text-abs {
+    line-height: 40px;
+  }
+
+  .services__garantii .garantii-info .garantii-element .wid {
+    max-width: 540px;
+  }
 }
 
 @media (max-width: 1145px) {
@@ -1800,6 +2173,48 @@ p {
   }
 }
 
+@media (max-width: 1060px) {
+  .services__packet h2 {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  .services__packet .services__list .list-element {
+    padding: 20px 10px 30px;
+  }
+  .services__packet .services__list .list-element img {
+    max-width: 68px;
+    max-height: 60px;
+  }
+
+  .services__packet .services__list .list-element .list-title {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .services__packet .services__list .list-element .list-description {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  .services__packet .services__list .list-element .list-price {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .services__packet .services__list .list-element .takeconsult-bg {
+    max-width: 100%;
+    width: 100%;
+    padding: 18px;
+  }
+
+  .services__packet .services__list {
+    gap: 30px;
+    margin-bottom: 104px;
+  }
+}
+
 @media (max-width: 960px) {
 	.form-container {
 		margin-bottom: 80px;
@@ -1948,6 +2363,88 @@ p {
   .gfaq__list {
     gap: 20px;
   }
+
+  .services__process .container.page-wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .services__process h2 {
+    line-height: 35px;
+    max-width: 700px;
+    margin-bottom: 30px;
+  }
+
+  .services__process h3 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .services__process .gfaq__question, .services__process .gfaq__answer p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .services__process .gfaq__answer {
+    padding: 0 10px;
+  }
+
+  .services__process .gfaq__item--active .gfaq__answer {
+    padding: 10px;
+  }
+
+  .services__process .process-info {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+
+  .services__process .process-info .info-item {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .services__process .process-info .info-item .info-title {
+    width: 100%;
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .services__process .process-info .info-item .info-description {
+    font-size: 16px;
+    line-height: 29px;
+    width: 100%;
+  }
+
+  .services__bankrot .container.page-wrapper {
+    padding-top: 15px;
+    padding-bottom: 24px;
+  }
+
+  .services__bankrot .container.page-wrapper p {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: left;
+    max-width: 780px;
+    margin-left: 0;
+  }
+
+  .services__bankrot .container.page-wrapper img {
+    max-width: 596px;
+    top: -80px;
+  }
+
+  .services__important {
+    padding: 32px 24px 18px;
+  }
+
+  .services__important p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .services__garantii {
+    margin-top: 60px;
+  }
 }
 
 @media (max-width: 945px) {
@@ -1965,6 +2462,29 @@ p {
 
   .services__perechen img {
     display: none;
+  }
+
+  .services__packet .services__list {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+
+  .services__packet.container.page-wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .services__packet .services__list .list-element {
+    max-width: 47%;
+  }
+
+  .services__packet h2 {
+    text-align: left;
+  }
+
+  .services__packet .services__list .list-element .takeconsult-bg {
+    padding: 18px 10px;
   }
 }
 
@@ -1996,6 +2516,24 @@ p {
 
   .services__information .services__text img {
     display: none;
+  }
+
+  .services__garantii .garantii-info .garantii-element.second .man-bg {
+    height: 248px;
+  }
+  .services__garantii .garantii-info .garantii-element .logo-white {
+    top: 28px;
+    left: 29px;
+  }
+
+  .services__garantii .garantii-info .garantii-element .text-abs {
+    margin-left: 0;
+  }
+
+  .services__garantii .garantii-info .garantii-element.second .abs {
+    right: auto;
+    left: 29px;
+    bottom: -100px;
   }
 }
 
@@ -2254,6 +2792,60 @@ p {
   .gfaq__question {
     gap: 10px;
   }
+
+  .services__process .container.page-wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .services__process h2 {
+    margin-bottom: 20px;
+  }
+
+  .services__process h3 {
+    margin-bottom: 30px;
+  }
+
+  .services__process .process-info {
+    padding-top: 60px;
+  }
+
+  .services__bankrot .container.page-wrapper {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  .services__bankrot .container.page-wrapper p {
+    font-size: 13px;
+    line-height: 23px;
+  }
+
+  .services__important {
+    padding: 28px 20px 10px;
+  }
+
+  .services__garantii {
+    margin-top: 60px;
+  }
+
+  .services__packet h2 {
+    margin-bottom: 10px;
+  }
+
+  .services__garantii .garantii-info {
+    gap: 41px;
+  }
+}
+
+@media (max-width: 610px) {
+  .services__packet .services__list .list-element {
+    max-width: 100%;
+  }
+
+  .services__packet .services__list .list-element .takeconsult-bg {
+    font-size: 16px;
+    max-width: 97%;
+  }
 }
 
 @media (max-width: 589px) {
@@ -2283,6 +2875,18 @@ p {
 		font-size: 15px;
 		line-height: 25px;
 	}
+
+  .services__garantii .garantii-info .garantii-element.second .man-bg {
+    height: 328px;
+  }
+
+  .services__garantii .garantii-info .garantii-element.second .abs {
+    bottom: -65px;
+  }
+
+  .services__garantii .garantii-info .garantii-element.second .abs br {
+    display: none;
+  }
 }
 
 
@@ -2453,6 +3057,30 @@ p {
     padding-top: 95px;
     padding-bottom: 35px;
   }
+
+  .services__process h2 {
+    font-size: 25px;
+  }
+
+  .services__bankrot .container.page-wrapper img {
+    max-width: 468px;
+    top: -49px;
+  }
+
+  .services__packet h2 {
+    margin-bottom: 15px;
+  }
+
+  .services__garantii .garantii-info .garantii-element p {
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 30px;
+    margin-bottom: 24px;
+  }
+
+  .services__garantii .garantii-info {
+    gap: 30px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -2529,6 +3157,21 @@ p {
 		flex-direction: column;
 		gap: 10px;
 	}
+
+  .services__garantii .garantii-info .garantii-element .logo-white {
+    top: 17px;
+    left: 19px;
+  }
+
+  .services__garantii .garantii-info .garantii-element.second .abs {
+    left: 19px;
+    max-width: 321px;
+  }
+
+  .services__garantii .garantii-info .garantii-element .text-abs {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 @media (min-width: 390px) {
 	.bg-green:first-child {
@@ -2658,5 +3301,110 @@ p {
   .gfaq {
     padding-top: 75px;
     padding-bottom: 25px;
+  }
+
+  .services__process .container.page-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .services__process h3 {
+    margin-bottom: 40px;
+  }
+
+  .services__process .gfaq__question {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .services__process .gfaq__answer p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .services__process .process-info {
+    padding-top: 40px;
+  }
+
+  .services__process .process-info .info-item .info-title {
+    max-height: 270px;
+  }
+
+  .services__process .process-info .info-item .info-description {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .services__bankrot .container.page-wrapper p {
+    text-align: center;
+  }
+    
+  .services__bankrot .container.page-wrapper img {
+    max-width: 358px;
+    top: 0;
+    left: -31px;
+  }
+
+  .services__packet .services__list {
+    margin-bottom: 40px;
+  }
+
+  .services__packet h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .services__packet .services__list .list-element {
+    padding: 19px 9px;
+  }
+
+  .services__packet .services__list .list-element .list-description {
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 18px;
+  }
+
+  .services__important {
+    padding: 34px 12px 8px;
+  }
+
+  .services__important p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .services__garantii .garantii-info .garantii-element .logo-white {
+    max-width: 141px;
+  }
+
+  .services__garantii .garantii-info .garantii-element.second .man-bg {
+    height: 198px;
+  }
+
+  .services__garantii .garantii-info .garantii-element .text-abs {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .services__garantii .garantii-info .garantii-element.second .abs {
+    bottom: -90px;
+    left: 19px;
+    max-width: 232px;
+  }
+
+  .services__garantii h2 {
+    text-align: left;
+    margin-bottom: 13px;
+  }
+
+  .services__garantii .garantii-info .garantii-element span {
+    font-size: 16px;
+    line-height: 25px;
+    display: block;
+    border-radius: 15px;
+  }
+
+  .services__garantii .garantii-info .garantii-element p {
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 }
