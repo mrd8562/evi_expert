@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{"title":"Контакты"})
+<body>
+	<div class="gpage">
+		<div class="page-wrapper first-screen">
+			@@include('html/header.html',{})
+		</div>
+			<div class="page-wrapper">
+				<section class="gcontacts">
+					<h2 class="gcontacts__title">Контакты</h2>
+          <div class="gcontacts_content">
+            <div class="gcontacts__info">
+              <div class="gcontacts__list">
+                <div class="gcontacts__left-side">
+                  <div class="gcontacts__item">
+                    <div class="gcontacts__item-title">
+                      <svg class="gcontacts__icon"><use xlink:href="img/icons/icons.svg#phone"></use></svg>
+                      <span class="gcontacts__text">Позвоните нам</span>
+                    </div>
+                    <a href="#" class="gcontacts__link bold">+7 (916) 066-43-73</a>
+                  </div>
+                  
+                  <div class="gcontacts__item">
+                    <div class="gcontacts__item-title">
+                      <svg class="gcontacts__icon"><use xlink:href="img/icons/icons.svg#envelope"></use></svg>
+                      <span class="gcontacts__text">Напишите в мессанджере</span>
+                    </div>
+                    <div class="gcontacts__messengers">
+                      <a href="#" class="gcontacts__whatsapp"><svg class="gcontacts__icon"><use xlink:href="img/icons/icons.svg#whatsapp"></use></svg></a>     
+                      <a href="#" class="gcontacts__telegram"><svg class="gcontacts__icon"><use xlink:href="img/icons/icons.svg#telegram"></use></svg></a>     
+                    </div>         
+                  </div>
+                </div>
+                <div class="gcontacts__right-side">
+                  <div class="gcontacts__item">
+                    <div class="gcontacts__item-title">
+                      <svg class="gcontacts__icon"><use xlink:href="img/icons/icons.svg#arroba"></use></svg>
+                      <span class="gcontacts__text">Почта</span>
+                    </div>
+                    <p>info@evi-franch.ru</p>
+                  </div>
+                  <div class="gcontacts__item">
+                    <div class="gcontacts__item-title">
+                      <svg class="gcontacts__icon"><use xlink:href="img/icons/icons.svg#net"></use></svg>
+                      <span class="gcontacts__text">Вебсайт</span>
+                    </div>
+                    <p class="gcontacts__website">evi-franch.ru | evi-expert.ru</p>
+                  </div>
+                </div>
+                
+                <div class="gcontacts__item">
+                  <div class="gcontacts__item-title">
+                    <svg class="gcontacts__icon"><use xlink:href="img/icons/icons.svg#marker"></use></svg>
+                    <span class="gcontacts__text">Адрес</span>
+                  </div>
+                  <p>Москва, ул. Тверская 157а, к.23, офис 106</p>
+                </div>
+              </div>
+            </div>
+            <div class="gcontacts__map" id="map-container">
+                <p>Загрузка карты...</p>
+            </div>
+          </div>
+          <script>
+          document.addEventListener("DOMContentLoaded", function () {
+              let mapLoaded = false;
+              const mapContainer = document.getElementById("map-container");
+              const observer = new IntersectionObserver((entries, observer) => {
+                  entries.forEach(entry => {
+                      if (entry.isIntersecting && !mapLoaded) {
+                          mapLoaded = true;
+                          mapContainer.innerHTML = `<iframe src="https://yandex.by/map-widget/v1/?ll=37.660880%2C55.745727&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcwODA0OBJL0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINGD0LvQuNGG0LAg0KHRgtCw0L3QuNGB0LvQsNCy0YHQutC-0LPQviwgMjHRgTE4IgoNvaQWQhWf-15C&z=17.06" width="645" height="348" frameborder="1" allowfullscreen="true"></iframe>`;
+                          observer.disconnect();
+                      }
+                  });
+              }, { threshold: 0.5 });
+              observer.observe(mapContainer);
+          });
+          </script>        
+				</section>
+			</div>		
+			@@include('html/footer.html',{})		
+	</div>
+	<script type="text/javascript" src="js/app.min.js"></script>
+</body>
+</html>
