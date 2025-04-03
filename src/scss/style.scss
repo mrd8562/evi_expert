@@ -1,6 +1,6 @@
-@import "fonts.scss";
-@import "header.scss";
-@import "_inner-page-style.scss";
+@use "fonts";
+@use "header";
+@use "_inner-page-style";
 
 .mb-17 {
 	margin-bottom: 17px;
@@ -237,10 +237,10 @@ p {
 }
 
 .consultation-info {
-	font-family: 'NormalidadVar', sans-serif;
-	font-size: 20px;
-	max-width: 610px;
-	line-height: 30px;
+	font-family: 'NormalidadCompact', sans-serif;
+	font-size: 23px;
+	max-width: 742px;
+	line-height: 32px;
 }
 
 .man-block {
@@ -1013,7 +1013,7 @@ p {
 
 @media (max-width: 1145px) {
 	.gdocs {
-		padding: 114px 0 22px;
+		padding: 170px 0 22px;
 	}
 	.gdocs__title {
 		margin-bottom: 44px;
@@ -1075,7 +1075,7 @@ p {
 
 @media (max-width: 876px) {	
 	.gdocs {
-		padding: 68px 0 31px;
+		padding: 140px 0 31px;
 	}
 	.gdocs__title {
 		margin-bottom: 35px;
@@ -1124,7 +1124,7 @@ p {
 
 @media (max-width: 480px) {
 	.gdocs {
-		padding: 64px 0 28px;
+		padding: 100px 0 28px;
 	}
 	.gdocs__info {
 		margin-bottom: 50px;
@@ -1150,7 +1150,7 @@ p {
 
 @media (max-width: 320px) {
 	.gdocs {
-		padding: 55px 0 27px;
+		padding: 90px 0 27px;
 	}
 	.gdocs__title {
 		margin-bottom: 25px;
@@ -1295,7 +1295,7 @@ p {
 
 @media (max-width: 1145px) {	
 	.gcases {
-    padding: 113px 0 50px;
+    padding: 170px 0 50px;
 	}
 	.gcases__title {
     margin-bottom: 45px;
@@ -1388,7 +1388,7 @@ p {
 
 @media (max-width: 876px) {
 	.gcases {
-		padding: 68px 0 33px;
+		padding: 140px 0 33px;
 	}
 }
 
@@ -1397,7 +1397,7 @@ p {
 
 @media (max-width: 480px) {
 	.gcases {
-			padding: 64px 0 29px;
+    padding: 100px 0 29px;
 	}
 	.gcases__info {
 		margin-bottom: 43px;
@@ -1415,7 +1415,7 @@ p {
 
 @media (max-width: 320px) {
 	.gcases {
-			padding: 55px 0 25px;
+    padding: 90px 0 25px;
 	}
 	.gcases__title {
 		margin-bottom: 25px;
@@ -1657,7 +1657,7 @@ p {
 
 @media (max-width: 876px) {
 	.gcontacts {
-		padding: 68px 0 32px;
+		padding: 120px 0 32px;
 	}
 	.gcontacts__title {
 		margin-bottom: 45px;
@@ -1727,7 +1727,7 @@ p {
 
 @media (max-width: 531.98px) {
 	.gcontacts {
-			padding: 64px 0 28px;
+    padding: 100px 0 28px;
 	}
 	.gcontacts__title {
 		margin-bottom: 35px;
@@ -1766,7 +1766,7 @@ p {
 
 @media (max-width: 472px) {
 	.gcontacts {
-			padding: 55px 0 24px;
+    padding: 90px 0 24px;
 	}
 	.gcontacts__title {
 		margin-bottom: 25px;
@@ -2914,6 +2914,22 @@ p {
   width: 36%;
 }
 
+///
+/// Urlica 1
+/// 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3564,6 +3580,10 @@ p {
 
   .dolzhnik-line-block .line-two {
     left: 70%;
+  }
+
+  .gfaq {
+    padding-top: 140px;
   }
 }
 
@@ -4418,7 +4438,7 @@ p {
 	}
 
   .gfaq {
-    padding-top: 67px;
+    padding-top: 110px;
     padding-bottom: 32px;
   }
 
@@ -4759,7 +4779,7 @@ p {
   }
 
   .gfaq {
-    padding-top: 65px;
+    padding-top: 100px;
     padding-bottom: 35px;
   }
 
@@ -5097,7 +5117,7 @@ p {
   }
 
   .gfaq {
-    padding-top: 55px;
+    padding-top: 90px;
     padding-bottom: 25px;
   }
 
