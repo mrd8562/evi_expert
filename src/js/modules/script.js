@@ -121,4 +121,45 @@ if (document.querySelector('.line-one')) {
   window.addEventListener('resize', replaceImagesOnResize);
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  const tabs = document.querySelectorAll(".tab");
+  const indicator = document.getElementById("indicator");
+  const tabContents = document.querySelectorAll(".tab-content");
 
+  // Проверяем, существуют ли элементы на странице
+  if (!tabs.length || !indicator || !tabContents.length) {
+    console.error('Не найдены необходимые элементы для работы табов');
+    return;
+  }
+
+  function setIndicator(el) {
+    if (!el || !indicator) return;
+
+    indicator.style.width = `${el.offsetWidth}px`;
+    indicator.style.left = `${el.offsetLeft}px`;
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      const activeTab = document.querySelector(".tab.active");
+      const activeContent = document.querySelector(".tab-content.active");
+
+      // Проверяем наличие элементов перед работой с ними
+      if (activeTab) activeTab.classList.remove("active");
+      if (activeContent) activeContent.classList.remove("active");
+
+      tab.classList.add("active");
+      setIndicator(tab);
+
+      const tabId = tab.getAttribute('data-tab');
+      if (tabId) {
+        const content = document.getElementById(tabId);
+        if (content) content.classList.add('active');
+      }
+    });
+  });
+
+  // Инициализация при загрузке
+  const activeTab = document.querySelector(".tab.active");
+  if (activeTab) setIndicator(activeTab);
+});

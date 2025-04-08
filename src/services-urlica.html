@@ -44,36 +44,170 @@
       </div>
     </section>
 
-
-    <section class="services__packet">
+    <section class="services__urlica-tab">
       <div class="container page-wrapper">
-        <h2>Пакеты услуг:</h2>
-        <div class="services__list">
-          <div class="list-element">
-            <p class="list-title">Базовый</p>
-            <p class="list-description">Нет имущества и сомнительных сделок, нет агрессивных кредиторов, нет реальных
-              оснований для неосвобождения от долгов.</p>
-            <span class="list-price">от 145 000 руб.</span>
-            <a href="#" class="button takeconsult-bg">Получить консультацию</a>
-            <img src="img/branches.png" alt="branches">
+        <h2>Основные варианты банкротства и ответственность</h2>
+        <div class="tabs" id="tabs">
+          <div class="tab active" data-tab="tab1">Банкротство по инициативе<br>должника</div>
+          <div class="tab" data-tab="tab2">Банкротство по инициативе<br>кредитора</div>
+          <div class="tab" data-tab="tab3">Субсидиарная ответственность<br>и убытки</div>
+          <div class="tab-indicator" id="indicator"></div>
+        </div>
+
+        <div class="tab-content active" id="tab1">
+
+          <div class="busines__critical">
+            <div class="busunes__block-green">
+              <p class="desc"><span class="bold">Если бизнес оказался в критической ситуации</span><br>
+              и компания не может выполнять большинство своих обязательств, стоит рассмотреть возможность<br> прохождения процедуры
+              банкротства. Это поможет вам избежать ответственности по долговым обязательствам<br> компании и принять оптимальное решение
+              для выхода из сложной ситуации.
+              </p>
+              <img src="./img/graph.png" alt="graph">
+            </div>
+            <div class="busunes__block-question">
+              <div class="rect">
+                <p class="title">Чего ожидать?</p>
+                <div class="review-content">
+                  <p>
+                    Процедура банкротства компании — это сложный и длительный процесс, не имеющий универсального шаблона. Каждое банкротство
+                    индивидуально и проходит по своему сценарию, включая несколько этапов, зависящих от конкретной ситуации.
+                  </p>
+                </div>
+              </div>
+              <img src="img/artom.png" alt="name">
+            </div>
           </div>
-          <div class="list-element">
-            <p class="list-title">Расширенный</p>
-            <p class="list-description">Есть имущество и/или сомнительные сделки, агрессивные кредиторы и риск
-              неосвобождения от долгов.</p>
-            <span class="list-price">от 215 000 руб.</span>
-            <a href="#" class="button takeconsult-bg">Получить консультацию</a>
-            <img src="img/branches.png" alt="branches">
+
+          <div class="gfaq">
+            <h2 class="gfaq__title">Какие этапы банкротства проходит бизнес?</h2>
+            <div class="gfaq__list">
+              <div class="gfaq__item">
+                <button class="gfaq__question">Наблюдение
+                  <svg class="svg__icons">
+                    <use xlink:href="img/icons/icons.svg#open-icon"></use>
+                  </svg>
+                </button>
+                <div class="gfaq__answer">
+                  <p>Суд не отстраняет руководителя, но назначает временного управляющего на 6 месяцев для детального изучения бизнеса.
+                  Управляющий проверяет бухгалтерию, анализирует финансово-хозяйственную деятельность, оспаривает сделки и формирует
+                  реестр непогашенных требований кредиторов.</p>
+                </div>
+              </div>
+              <div class="gfaq__item">
+                <button class="gfaq__question">Можно ли пропустить этап "Наблюдения"
+                  <svg class="svg__icons">
+                    <use xlink:href="img/icons/icons.svg#open-icon"></use>
+                  </svg>
+                </button>
+                <div class="gfaq__answer">
+                  <p>...</p>
+                </div>
+              </div>
+              <div class="gfaq__item">
+                <button class="gfaq__question">Финансовое оздоровление
+                  <svg class="svg__icons">
+                    <use xlink:href="img/icons/icons.svg#open-icon"></use>
+                  </svg>
+                </button>
+                <div class="gfaq__answer">
+                  <p>Ответ на вопрос...</p>
+                </div>
+              </div>
+              <div class="gfaq__item">
+                <button class="gfaq__question">Внешнее управление
+                  <svg class="svg__icons">
+                    <use xlink:href="img/icons/icons.svg#open-icon"></use>
+                  </svg>
+                </button>
+                <div class="gfaq__answer">
+                  <p>Ответ на вопрос...</p>
+                </div>
+              </div>
+              <div class="gfaq__item">
+                <button class="gfaq__question">Конкурсное производство
+                  <svg class="svg__icons">
+                    <use xlink:href="img/icons/icons.svg#open-icon"></use>
+                  </svg>
+                </button>
+                <div class="gfaq__answer">
+                  <p>Ответ на вопрос...</p>
+                </div>
+              </div>
+              <div class="gfaq__item">
+                <button class="gfaq__question">Мировое соглашение
+                  <svg class="svg__icons">
+                    <use xlink:href="img/icons/icons.svg#open-icon"></use>
+                  </svg>
+                </button>
+                <div class="gfaq__answer">
+                  <p>Ответ на вопрос...</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="list-element">
-            <p class="list-title">Полный</p>
-            <p class="list-description">Есть имущество и/или сомнительные сделки, агрессивные кредиторы, риск неосвобождения
-              от долгов, угроза уголовной
-              ответственности.</p>
-            <span class="list-price">от 375 000 руб.</span>
-            <a href="#" class="button takeconsult-bg">Получить консультацию</a>
-            <img src="img/branches.png" alt="branches">
+
+          <div class="services__packet">
+            <h2>Пакеты услуг:</h2>
+            <div class="services__list">
+              <div class="list-element">
+                <p class="list-title">Базовый</p>
+                <p class="list-description">Нет имущества и сомнительных сделок, нет агрессивных кредиторов, нет реальных оснований для субсидиарной ответственности
+                (взыскания убытков)</p>
+                <span class="list-price">от 250 000 руб.</span>
+                <a href="#" class="button takeconsult-bg">Получить консультацию</a>
+                <img src="img/branches.png" alt="branches">
+              </div>
+              <div class="list-element">
+                <p class="list-title">Расширенный</p>
+                <p class="list-description">Есть имущество и/или сомнительные сделки, агрессивные кредиторы, нет реальных оснований для субсидиарной ответственности
+                (взыскания убытков)</p>
+                <span class="list-price">от 500 000 руб.</span>
+                <a href="#" class="button takeconsult-bg">Получить консультацию</a>
+                <img src="img/branches.png" alt="branches">
+              </div>
+              <div class="list-element">
+                <p class="list-title">Полный</p>
+                <p class="list-description">Есть имущество и/или сомнительные сделки, агрессивные кредиторы, реальные основания для субсидиарной ответственности
+                (взыскания убытков)</p>
+                <span class="list-price">от 800 000 руб.</span>
+                <a href="#" class="button takeconsult-bg">Получить консультацию</a>
+                <img src="img/branches.png" alt="branches">
+              </div>
+            </div>
           </div>
+        </div>
+        
+        <div class="tab-content" id="tab2">
+          <h2>Банкротство по инициативе кредитора</h2>
+          <p>Кредиторы имеют право обратиться в суд с заявлением о признании должника банкротом, если последний не исполняет
+            свои денежные обязательства в течение трех месяцев с даты, когда они должны были быть исполнены.</p>
+          <p><strong>Особенности процедуры:</strong></p>
+          <ul>
+            <li>Минимальная сумма задолженности - 300 000 руб. для юрлиц, 500 000 руб. для физлиц</li>
+            <li>Необходимо доказать наличие долга (договор, решение суда и т.д.)</li>
+            <li>Суд может ввести процедуру наблюдения или сразу приступить к реализации имущества</li>
+            <li>Кредиторы участвуют в собрании кредиторов и могут влиять на ход процесса</li>
+          </ul>
+          <p>Процедура позволяет кредиторам получить хотя бы часть причитающихся им средств через продажу имущества должника.
+          </p>
+        </div>
+        
+        <div class="tab-content" id="tab3">
+          <h2>Субсидиарная ответственность и убытки</h2>
+          <p>Субсидиарная ответственность - это дополнительная ответственность контролирующих должника лиц (руководителей,
+            учредителей, бенефициаров), которые могут быть привлечены к погашению долгов компании при ее банкротстве.</p>
+          <p><strong>Условия привлечения:</strong></p>
+          <ul>
+            <li>Действия (или бездействие), приведшие к банкротству</li>
+            <li>Несоблюдение процедуры банкротства</li>
+            <li>Недостаточность имущества для погашения требований кредиторов</li>
+            <li>Доказанная вина контролирующих лиц</li>
+          </ul>
+          <p>Также в рамках банкротства может быть взыскана сумма убытков, причиненных кредиторам неправомерными действиями
+            должника или его контролирующих лиц.</p>
+          <p>С 2017 года законодательство ужесточило меры по привлечению к субсидиарной ответственности, что сделало этот
+            инструмент более эффективным для кредиторов.</p>
         </div>
       </div>
     </section>
