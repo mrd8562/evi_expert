@@ -5890,8 +5890,9 @@ p {
 .footer {
 	background-color: #202928;
 }
-.footer .logo img{
+.footer .logo svg{
 	max-width: 180px;
+  height: 49px;
 	width: 100%;
 }
 .footer .logo {
