@@ -121,6 +121,26 @@ if (document.querySelector('.line-one')) {
   window.addEventListener('resize', replaceImagesOnResize);
 }
 
+if (document.querySelector('.lines-more')) {
+  function replaceImagesOnResize() {
+    const linesMore = document.querySelector('.lines-more');
+    const desktopImgMore = 'img/lines-more.png';
+    const mobileImgOne = linesMore.getAttribute('data-mobile');
+
+    if (window.innerWidth <= 960) {
+      linesMore.src = mobileImgOne;
+    } else {
+      linesMore.src = desktopImgMore;
+    }
+  }
+
+  // Запускаем при загрузке страницы
+  document.addEventListener('DOMContentLoaded', replaceImagesOnResize);
+
+  // Обновляем при изменении размера окна
+  window.addEventListener('resize', replaceImagesOnResize);
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   const tabs = document.querySelectorAll(".tab");
   const indicator = document.getElementById("indicator");
@@ -128,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Проверяем, существуют ли элементы на странице
   if (!tabs.length || !indicator || !tabContents.length) {
-    console.error('Не найдены необходимые элементы для работы табов');
+    // console.error('Не найдены необходимые элементы для работы табов');
     return;
   }
 
@@ -162,4 +182,10 @@ document.addEventListener('DOMContentLoaded', function () {
   // Инициализация при загрузке
   const activeTab = document.querySelector(".tab.active");
   if (activeTab) setIndicator(activeTab);
+
+  indicator.addEventListener('click', () => {
+    indicator.previousSibling.previousSibling.classList.toggle('hidden');
+    indicator.previousSibling.previousSibling.previousSibling.previousSibling.classList.toggle('hidden');
+    indicator.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.classList.toggle('pb0');
+  })
 });

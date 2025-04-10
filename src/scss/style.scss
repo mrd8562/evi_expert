@@ -9,6 +9,18 @@
 	font-family: 'NormalidadCompact', sans-serif;
 	font-weight: 500;
 }
+.reg {
+  font-family: 'NormalidadCompact', sans-serif;
+  font-weight: 400;
+}
+
+.hidden {
+  display: none;
+}
+
+.pb0 {
+  padding-bottom: 0 !important;
+}
 
 .button {
 	border-radius: 10px;
@@ -2734,9 +2746,6 @@ p {
 	align-content: center;
 	text-align: center;
 	padding: 0 28px;
-	// img {
-	// 	width: 335.91px;
-	// }
 }
 .how {
 	position: relative;
@@ -2924,16 +2933,14 @@ p {
 	.gco__why-img2 {
     height: 327px;
 		padding: 0 21px;
-    /* width: 270px; */
 		background-size: 150% auto;
     background-position: 6% 100%;
 	}
 	.how {
-    padding: 0 45px 40px;
+    padding: 40px 45px;
 	}
 	.gco__how-block {
 		gap: 30px;
-		// margin-bottom: 30px;
 	}
 	.gco__how-left {
 		.gco__block-title {
@@ -3058,6 +3065,7 @@ p {
 		flex-wrap: wrap;
 		text-align: left;
 		gap: 0;
+    width: 100%;
 		.gco__iconcont {
 			max-width: 10.6%;
 			flex: 1;
@@ -3086,7 +3094,7 @@ p {
 		}
 	}
 	.how {
-		padding: 0 35px 60px;
+		padding: 60px 35px ;
 	}
 }
 @media (max-width: 780px) {
@@ -3235,7 +3243,7 @@ p {
 		}
 	}
 	.how {
-		padding: 0 15px 50px;
+		padding: 50px 15px;
 	}
 	.gco__how-left .gcontacts__info {
 		.gcontacts__text {
@@ -4591,8 +4599,8 @@ p {
 
 .services__urlica-tab .container.page-wrapper {
   padding-top: 0;
+  padding-bottom: 0;
 }
-
 .services__urlica-tab h2 {
   font-size: 30px;
   line-height: 28px;
@@ -4605,7 +4613,7 @@ p {
 .services__urlica-tab .tabs {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #5EC991;
+  border-bottom: 1px solid #5ec99154;
   position: relative;
   margin-bottom: 120px;
 }
@@ -4668,41 +4676,49 @@ p {
   text-align: center;
 }
 
-.services__urlica-tab .busunes__block-question img {
+.services__urlica-tab .busunes__block-question .circle {
 	position: absolute;
-  bottom: -100px;
-  display: inline-block;
-  width: 100px;
-  height: 100px;
+  bottom: 110px;
+  display: flex;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  border: 1px solid #D6CBC1;
+  background: #5381F6;
   z-index: 3;
   left: 0;
   right: 0;
   margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
 }
 
 .services__urlica-tab .busunes__block-question .rect {
   position: absolute;
   bottom: -50px;
+  top: -40px;
   left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 930px;
   width: 100%;
-  height: 100%;
+  height: 198px;
   border-radius: 10px;
   background: #FBF7F7;
   border: 1px dashed #D6CBC1;
-  padding: 68px 60px 30px;
+  padding: 40px 22px 20px;
   z-index: 1;
 }
 
 .services__urlica-tab .busunes__block-question .rect:before {
   content: '';
   position: absolute;
-  bottom: -60px;
+  bottom: -26px;
   left: 50%;
   transform: translateX(-50%);
-  width: 120px;
-  height: 120px;
+  width: 50px;
+  height: 50px;
   background: #ffffff;
   border-radius: 50%;
   z-index: 2;
@@ -4713,19 +4729,318 @@ p {
 .services__urlica-tab .busunes__block-question .rect::after {
   content: '';
   position: absolute;
-  bottom: -60px;
+  bottom: -26px;
   left: 50%;
   transform: translateX(-50%);
-  width: 120px;
-  height: 122px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   z-index: 2;
 }
 
+.services__urlica-tab .busunes__block-question .rect .title {
+  font-weight: 500;
+  color: #01B055;
+  font-size: 23px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
 
+.services__urlica-tab .busunes__block-question .rect .content p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 0;
+}
 
+.services__urlica-tab .gfaq {
+  padding-top: 0;
+  padding-bottom: 120px;
+}
 
+.services__urlica-tab .gfaq__title {
+  text-align: left;
+}
 
+.services__urlica-tab .gfaq__answer p {
+  margin-bottom: 20px;
+}
+
+.services__urlica-tab .gfaq__answer p.reg {
+  margin-bottom: 10px;
+}
+
+.services__urlica-tab .gfaq__answer ul li {
+  list-style: disc;
+  color: #01B055;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.services__urlica-tab .gfaq__answer ul li span {
+  color:#000;
+}
+
+.services__urlica-tab .services__packet .services__list {
+  margin-bottom: 0;
+}
+
+.services__urlica-tab .services__packet {
+  padding-bottom: 120px;
+}
+
+///
+/// Urlica 2
+/// 
+
+.services__urlica-tab .task-block h3 {
+  font-size: 23px;
+  line-height: 33px;
+  margin-bottom: 43px;
+  font-weight: 500;
+}
+
+.services__urlica-tab .task-block h3 br {
+  display: none;
+}
+
+.services__urlica-tab .task-block h3 span {
+  color: #fff;
+  font-weight: 300;
+  background-color: #01B055;
+  border-radius: 10px;
+}
+
+.services__urlica-tab .credits-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 31.5px 0px #0000001A;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 120px;
+}
+
+.services__urlica-tab .credits-info p {
+  margin-bottom: 0;
+}
+
+.services__urlica-tab .credits-info .credits-item {
+  position: relative;
+}
+
+.services__urlica-tab .credits-info .credits-item.one {
+  padding: 40px 10px 40px 50px;
+}
+
+.services__urlica-tab .credits-info .credits-item.one p {
+  max-width: 350px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.services__urlica-tab .credits-info .credits-item.two li {
+  display: flex;
+  margin-bottom: 17px;
+}
+
+.services__urlica-tab .credits-info .credits-item.two li:last-child {
+  margin-bottom: 0;
+}
+
+.services__urlica-tab .credits-info .credits-item.two li img {
+  flex-shrink: 0;
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+}
+
+.services__urlica-tab .credits-info .credits-item.two li p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.services__urlica-tab .credits-info .credits-item.two {
+  padding: 17px 30px 17px 10px;
+}
+
+.services__urlica-tab .credits-info .bg-lgr {
+  background-color: #5EC9914D;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  clip-path: ellipse(18% 79% at 10% 50%);
+}
+
+.services__urlica-tab .proizv-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.services__urlica-tab .proizv-item {
+  display: flex;
+  flex: 0 0 auto;
+  max-width: 48%;
+  align-items: center;
+}
+
+.services__urlica-tab .proizv-item img {
+  flex-shrink: 0;
+  width: 73px;
+  height: 73px;
+  margin-right: 20px;
+}
+
+.services__urlica-tab .proizv-item p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.services__urlica-tab .services__important {
+  max-width: 1100px;
+  margin-bottom: 120px;
+}
+
+.services__urlica-tab .services__important.tab-el p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.services__urlica-tab .services__important.tab-el .bold {
+  color: #000;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0;
+  border-radius: 0;
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+  background-color: initial;
+}
+
+.services__urlica-tab .services__information .services__text p {
+  max-width: 100%;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.services__urlica-tab .first-task-green {
+  background-color: #EFFAF4;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.services__urlica-tab .first-task-green .gdocs__info {
+  margin-bottom: 0;
+}
+
+.services__urlica-tab .first-task-green h2 {
+  text-align: left;
+}
+
+.services__urlica-tab .first-task-green .gdocs__image {
+  height: 100%;
+}
+
+.services__urlica-tab .lines-block {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.services__urlica-tab .lines-block h2 {
+  line-height: 38px;
+  max-width: 770px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.services__urlica-tab .lines-block .text-item {
+  padding: 12px 16px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 31.5px 0px #0000001A;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.services__urlica-tab .lines-block .text-item p {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.services__urlica-tab .lines-block .text-item:nth-child(1) {
+  max-width: 443px;
+  margin-bottom: 14px;
+}
+
+.services__urlica-tab .lines-block .text-item:nth-child(2) {
+  max-width: 510px;
+  margin-bottom: 45px;
+  margin-right: 93px;
+  margin-left: auto;
+}
+
+.services__urlica-tab .lines-block .text-item:nth-child(3) {
+  max-width: 483px;
+}
+
+.services__urlica-tab .lines-block .text-item:nth-child(4) {
+  max-width: 570px;
+  margin-left: auto;
+  margin-bottom: 61px;
+}
+
+.services__urlica-tab .lines-block .text-item:last-child {
+  max-width: 546px;
+  margin: 0 auto;
+}
+
+.services__urlica-tab .lines-block img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 0;
+}
+
+.services__urlica-tab .services__packet .services__list .list-element .list-title,
+.services__urlica-tab .services__packet .services__list .list-element .list-price {
+  font-size: 25px;
+  line-height: 35px;
+}
+
+.services__urlica-tab .services__packet .services__list .list-element .list-description {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.services__urlica-tab #tab2 .services__packet .services__list .list-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 23%;
+  padding: 42px 15px 40px;
+}
+
+.services__urlica-tab #tab2 .services__packet .services__list {
+  justify-content: space-between;
+}
+
+.services__urlica-tab #tab2 .services__packet .services__list .list-element .takeconsult-bg {
+  width: 97%;
+}
 
 
 
@@ -4918,6 +5233,9 @@ p {
     max-width: 610px;
     right: -190px;
     bottom: 130px;
+  }
+  .services__urlica-tab .task-block h3 br {
+    display: block;
   }
 }
 
@@ -5405,6 +5723,27 @@ p {
   .main-services .services__question .question-element:last-child img {
     left: -125px;
   }
+
+  .services__urlica-tab .tab {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .services__urlica-tab .lines-block img {
+    display: none;
+  }
+
+  .services__urlica-tab .lines-block .text-item:nth-child(3) {
+    margin-bottom: 30px;
+  }
+
+  .services__urlica-tab #tab2 .services__packet .services__list {
+    flex-wrap: wrap;
+  }
+
+  .services__urlica-tab #tab2 .services__packet .services__list .list-element {
+    max-width: 31%;
+  }
 }
 
 @media (max-width: 1097px) {
@@ -5891,6 +6230,224 @@ p {
   .main-services .services__question .question-element {
     width: 46%;
   }
+
+  .services__urlica-tab h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .services__urlica-tab .tabs {
+    margin-bottom: 60px;
+  }
+
+  .services__urlica-tab .busines__critical .busunes__block-green .desc br {
+    display: none;
+  }
+
+  .services__urlica-tab .busines__critical .busunes__block-green .desc br.one {
+    display: block;
+  }
+
+  .services__urlica-tab .busines__critical .busunes__block-green {
+    padding: 20px;
+  }
+
+  .services__urlica-tab .busines__critical .busunes__block-green img {
+    left: -20px;
+  }
+
+  .services__urlica-tab .busines__critical .busunes__block-green .desc span {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .services__urlica-tab .busines__critical .busunes__block-green .desc {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .services__urlica-tab .busunes__block-question .rect {
+    padding: 10px 20px 30px;
+    top: -16px;
+    max-width: 730px;
+    height: 170px;
+  }
+
+  .services__urlica-tab .busunes__block-question .rect .title {
+    font-size: 18px;
+    margin-bottom: 17px;
+  }
+
+  .services__urlica-tab .busunes__block-question .rect .content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .services__urlica-tab .busunes__block-question .circle {
+    bottom: 115px;
+  }
+
+  .services__urlica-tab .gfaq__answer ul li span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .services__urlica-tab .gfaq {
+    padding-bottom: 80px;
+  }
+
+  .services__urlica-tab .task-block h3 {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+
+  .services__urlica-tab .credits-info .credits-item.one p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .services__urlica-tab .credits-info .credits-item.one {
+    padding: 18px 46px 18px 14px;
+    width: 55%;
+  }
+
+  .services__urlica-tab .credits-info .credits-item.two li img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .services__urlica-tab .credits-info .credits-item.two li p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .services__urlica-tab .credits-info .credits-item.two li {
+    margin-bottom: 5px;
+  }
+
+  .services__urlica-tab .credits-info .bg-lgr {
+    clip-path: ellipse(32% 90% at 10% 50%);
+  }
+
+  .services__urlica-tab .credits-info .credits-item.two {
+    padding: 16px 7px;
+  }
+
+  .services__urlica-tab .credits-info {
+    margin-bottom: 80px;
+  }
+
+  .services__urlica-tab .proizv-item img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .services__urlica-tab .proizv-item p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .services__urlica-tab .proizv-item {
+    max-width: 46%;
+  }
+
+  .services__urlica-tab .proizv-block {
+    margin-bottom: 54px;
+  }
+
+  .services__urlica-tab .services__important.tab-el p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .services__urlica-tab .services__important {
+    margin-bottom: 80px;
+  }
+
+  .services__urlica-tab .first-task-green {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .services__urlica-tab .services__information .services__text p {
+    padding: 0;
+    text-align: left;
+    font-size: 17px;
+  }
+
+  .services__urlica-tab .first-task-green .gdocs__info {
+    gap: 20px;
+  }
+
+  .services__urlica-tab .lines-block {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .services__urlica-tab .lines-block h2 {
+    margin-bottom: 20px;
+  }
+
+  .services__urlica-tab .lines-block .text-item p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .services__urlica-tab .lines-block .text-item {
+    padding: 10px;
+  }
+
+  .services__urlica-tab .lines-block .text-item:nth-child(1) {
+    max-width: 345px;
+    margin-right: 62px;
+    margin-bottom: 24px;
+  }
+
+  .services__urlica-tab .lines-block .text-item:nth-child(2) {
+    max-width: 394px;
+    margin-right: 0;
+    margin-bottom: 33px;
+  }
+
+  .services__urlica-tab .lines-block .text-item:nth-child(3) {
+    max-width: 425px;
+    margin-bottom: 55px;
+  }
+
+  .services__urlica-tab .lines-block .text-item:nth-child(4) {
+    max-width: 427px;
+    margin-bottom: 55px;
+  }
+
+  .services__urlica-tab .lines-block .text-item:last-child {
+    max-width: 431px;
+    margin-left: 0;
+  }
+
+  .services__urlica-tab .lines-block img {
+    display: block;
+    top: -45px;
+  }
+
+  .services__urlica-tab .services__packet {
+    padding-bottom: 80px;
+  }
+
+  .services__urlica-tab .services__packet .services__list .list-element .list-title, .services__urlica-tab .services__packet .services__list .list-element .list-price {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .services__urlica-tab #tab2 .services__packet .services__list .list-element {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 946px) {
+  .services__urlica-tab #tab2 .services__packet .services__list .list-element {
+    max-width: 46%;
+  }
 }
 
 @media (max-width: 945px) {
@@ -5981,6 +6538,12 @@ p {
     left: 29px;
     bottom: -100px;
   }
+
+  .services__urlica-tab .tab {
+    white-space: wrap;
+    text-align: left;
+    width: 27%;
+  }
 }
 
 @media (max-width: 835px) {
@@ -6019,6 +6582,18 @@ p {
     flex-direction: column;
     text-align: center;
     gap: 20px;
+  }
+}
+
+@media (max-width: 858px) {
+  .services__urlica-tab .lines-block img {
+    top: -10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .services__urlica-tab .lines-block img {
+    display: none;
   }
 }
 
@@ -6139,6 +6714,14 @@ p {
     z-index: 2;
     position: relative;
   }
+
+  .services__urlica-tab .busunes__block-question .rect {
+    height: 190px;
+  }
+
+  .services__urlica-tab .busunes__block-question .circle {
+    bottom: 95px;
+  }
 }
 
 @media (max-width: 717px) {
@@ -6154,6 +6737,34 @@ p {
 	.stage-block-flex.two .stage-element:last-child::after {
 		height: 230px;
 	}
+
+  .services__urlica-tab .credits-info {
+    flex-wrap: wrap;
+  }
+
+  .services__urlica-tab .credits-info .credits-item.one {
+    width: 100%;
+    padding: 20px 20px 40px;
+  }
+
+  .services__urlica-tab .credits-info .credits-item.two {
+    padding: 20px;
+  }
+  .services__urlica-tab .credits-info .credits-item.one p {
+    max-width: 100%;
+  }
+
+  .services__urlica-tab .credits-info .bg-lgr {
+    clip-path: ellipse(100% 92% at 50% -45%);
+  }
+
+  .services__urlica-tab .proizv-block {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .services__urlica-tab .proizv-item {
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 641px) {
@@ -6455,6 +7066,85 @@ p {
   .main-services.quest .container.page-wrapper {
     padding-bottom: 60px;
   }
+
+  .services__urlica-tab h2 {
+    text-align: left;
+  }
+
+  .services__urlica-tab .tab {
+    padding: 0;
+    padding-bottom: 20px;
+  }
+
+  .services__urlica-tab .tabs {
+    margin-bottom: 30px;
+  }
+
+  .services__urlica-tab .busunes__block-question .rect {
+    max-width: 510px;
+    height: 225px;
+  }
+
+  .services__urlica-tab .busunes__block-question .circle {
+    bottom: 60px;
+  }
+
+  .services__urlica-tab .gfaq__answer ul li {
+    line-height: 16px;
+  }
+
+  .services__urlica-tab .gfaq {
+    padding-bottom: 60px;
+  }
+
+  .services__urlica-tab .task-block h3 {
+    margin-bottom: 25px;
+  }
+
+  .services__urlica-tab .task-block h3 br {
+    display: none;
+  }
+
+  .services__urlica-tab .credits-infoa,
+  .services__urlica-tab .services__important {
+    margin-bottom: 60px;
+  }
+
+  .services__urlica-tab .services__important.tab-el .bold {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .services__urlica-tab .first-task-green .gdocs__info {
+    gap: 40px;
+  }
+
+  .services__urlica-tab .gdocs__image img {
+    height: 271px;
+  }
+
+  .services__urlica-tab .first-task-green {
+    padding-bottom: 40px;
+  }
+
+  .services__urlica-tab .lines-block {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .services__urlica-tab .lines-block .text-item {
+    max-width: 80% !important;
+    margin-bottom: 30px !important;
+  }
+
+  .services__urlica-tab .lines-block .text-item:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .services__urlica-tab .lines-block h2 {
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 610px) {
@@ -6506,6 +7196,14 @@ p {
 
   .services__garantii .garantii-info .garantii-element.second .abs br {
     display: none;
+  }
+
+  .services__urlica-tab .busunes__block-question .rect {
+    height: 245px;
+  }
+
+  .services__urlica-tab .busunes__block-question .circle {
+    bottom: 40px;
   }
 }
 
@@ -6808,6 +7506,127 @@ p {
   .main-services .services__question .question-element .question-text .title {
     margin-bottom: 10px;
   }
+
+  .services__urlica-tab .tab-indicator {
+    border: solid #D6CBC1;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 10px;
+    transform: rotate(45deg);
+    width: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    height: auto !important;
+    top: 15px;
+    border-radius: 0;
+    right: 20px;
+    background-color: initial;
+  }
+
+  .services__urlica-tab .tabs {
+    border: 1px solid #5ec99154;
+    border-radius: 5px;
+    background-color: #FBF7F7;
+    padding: 14px 20px;
+    flex-wrap: wrap;
+    color: #0000007a;
+    transition: color 4s;
+  }
+
+  .services__urlica-tab .tabs .active {
+    color: #000;
+    transition: color 1s;
+  }
+
+  .services__urlica-tab .tab {
+    width: 100%;
+  }
+
+  .services__urlica-tab .tab br {
+    display: none;
+  }
+
+  .services__urlica-tab .tab:nth-child(3) {
+    padding-bottom: 0;
+  }
+
+  .services__urlica-tab .task-block h3 {
+    font-size: 17px;
+    line-height: 27px;
+    margin-bottom: 51px;
+  }
+
+  .services__urlica-tab .credits-info .bg-lgr {
+    clip-path: ellipse(100% 60% at 50% -23%);
+  }
+
+  .services__urlica-tab .credits-info {
+    margin-bottom: 50px;
+  }
+
+  .services__urlica-tab .proizv-item {
+    display: block;
+  }
+
+  .services__urlica-tab .proizv-item img {
+    margin-bottom: 10px;
+  }
+
+  .services__urlica-tab .proizv-item p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .services__urlica-tab .proizv-block {
+    margin-bottom: 66px;
+  }
+
+  .services__urlica-tab .credits-infoa,
+  .services__urlica-tab .services__important {
+    margin-bottom: 50px;
+  }
+
+  .services__urlica-tab h2 {
+    margin-bottom: 20px;
+  }
+
+  .services__urlica-tab .first-task-green .gdocs__info {
+    gap: 20px;
+  }
+
+  .services__urlica-tab .gdocs__image img {
+    height: 223px;
+  }
+
+  .services__urlica-tab .services__information .services__text p {
+    font-size: 16px;
+  }
+
+  .services__urlica-tab .lines-block {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .services__urlica-tab .lines-block h2 {
+    margin-bottom: 45px;
+  }
+
+  .services__urlica-tab .lines-block .text-item {
+    max-width: 95% !important;
+  }
+
+  .services__urlica-tab #tab2 .services__packet .services__list .list-element {
+    max-width: 100%;
+  }
+
+  .services__urlica-tab #tab2 .services__packet .services__list .list-element .price-block {
+    width: 100%;
+  }
+
+  .services__urlica-tab .services__packet {
+    padding-bottom: 50px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -6903,6 +7722,22 @@ p {
   .testimonials .review-flex .review-block {
     min-height: 255px;
   }
+
+  .services__urlica-tab .tabs {
+    padding-right: 40px;
+  }
+
+  .services__urlica-tab .busunes__block-question .rect {
+    height: 270px;
+  } 
+
+  .services__urlica-tab .busunes__block-question .circle {
+    bottom: 85px;
+  }
+
+  .services__urlica-tab .busunes__block-question {
+    min-height: 360px;
+  }
 }
 @media (min-width: 390px) {
 	.bg-green:first-child {
@@ -6915,6 +7750,16 @@ p {
 		border-bottom-left-radius: 0;
 	}
 }
+
+@media (max-width: 350px) {
+  .services__urlica-tab .busunes__block-question .rect {
+    height: 320px;
+  }
+  .services__urlica-tab .busunes__block-question .circle {
+    bottom: 35px;
+  }
+}
+
 @media (max-width: 340px) {
 	.footer-element .info .info-item div a, .footer-element .info .info-item div p {
 		font-size: 14px;
@@ -7294,5 +8139,102 @@ p {
   .main-services .services__question .question-element .question-text .desc, .main-services .services__question .question-element .question-text .desc li {
     font-size: 15px;
     line-height: 22px;
+  }
+
+  .services__urlica-tab h2 {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+
+  .services__urlica-tab .tabs {
+    padding: 10px 30px 10px 10px;
+    margin-bottom: 40px;
+    
+  }
+
+  .services__urlica-tab .tab {
+    font-size: 15px;
+  }
+
+  .services__urlica-tab .tab-indicator {
+    right: 10px;
+  }
+
+  .services__urlica-tab .task-block h3 {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 33px;
+  }
+
+  .services__urlica-tab .credits-info .credits-item.one {
+    padding: 10px 10px 30px;
+  }
+
+  .services__urlica-tab .credits-info .credits-item.one p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .services__urlica-tab .credits-info .credits-item.two {
+    padding: 10px;
+  }
+
+  .services__urlica-tab .credits-info .credits-item.two li p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .services__urlica-tab .credits-info {
+    margin-bottom: 40px;
+  }
+
+  .services__urlica-tab .services__important.tab-el p,
+  .services__urlica-tab .services__important.tab-el .bold {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .services__urlica-tab .credits-infoa, .services__urlica-tab .services__important {
+    margin-bottom: 40px;
+  }
+
+  .services__urlica-tab .first-task-green {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .services__urlica-tab .gdocs__image img {
+    height: 150px;
+  }
+
+  .services__urlica-tab .services__information .services__text p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .services__urlica-tab .lines-block {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .services__urlica-tab .lines-block h2 {
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .services__urlica-tab .lines-block .text-item {
+    max-width: 100% !important;
+    margin-right: 0 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .services__urlica-tab #tab2 .services__packet .services__list {
+    gap: 20px;
+  }
+
+  .services__urlica-tab .services__packet {
+    padding-bottom: 40px;
   }
 }
