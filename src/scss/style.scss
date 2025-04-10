@@ -2,9 +2,17 @@
 @use "header";
 @use "_inner-page-style";
 
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
 .mb-17 {
 	margin-bottom: 17px;
 }
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
 .bold {
 	font-family: 'NormalidadCompact', sans-serif;
 	font-weight: 500;
@@ -5867,8 +5875,158 @@ p {
   width: 97%;
 }
 
+///
+/// Urlica 3
+/// 
 
+.services__urlica-tab #tab3 .gdocs__info .two {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  height: 80%;
+}
 
+.services__urlica-tab #tab3 .gdocs__info .gdocs__image {
+  height: 100%;
+}
+
+.services__urlica-tab #tab3 .gdocs__info .button.spisat{
+  display: inline-block;
+  margin-top: 60px;
+  padding: 22px 57px;
+}
+
+.services__urlica-tab #tab3 .gdocs__info {
+  margin-bottom: 120px;
+}
+
+.services__urlica-tab #tab3 .gfaq__answer .listn li {
+  list-style: none;
+  color:#000;
+  margin-left: 0;
+}
+
+.services__urlica-tab #tab3 .gfaq__answer .listn li .okey {
+  fill: #01B055;
+  transform: none;
+  margin-right: 7px;
+}
+
+.services__urlica-tab #tab3 .gfaq.last {
+  padding-bottom: 0;
+}
+
+.services__urlica-tab #tab3 .gfaq__answer p {
+  font-weight: 400;
+}
+
+.services__urlica-tab #tab3 .gfaq__answer .green {
+  color: #01B055;
+}
+
+.services__urlica-tab #tab3 .gfaq.last h2 {
+  text-align: center;
+}
+
+.services__urlica-tab #tab3 .checks {
+  padding-top: 95px;
+  padding-bottom: 120px;
+}
+
+.services__urlica-tab #tab3 .check-bg {
+  background: url(../img/modern-office.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 52px 89px 52px 40px;
+}
+
+.services__urlica-tab #tab3 .check-bg p {
+  max-width: 100%;
+  font-size: 23px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+.services__urlica-tab #tab3 .check-bg p.green {
+  color: #5EC991;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.services__urlica-tab #tab3 .office-block {
+  background: linear-gradient(rgb(255 255 255 / 70%), rgb(255 255 255 / 70%)), url(../img/bg-office.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding-top: 120px;
+  padding-bottom: 25px;
+}
+
+.services__urlica-tab #tab3 .office-block::before {
+  content:'';
+  opacity: 0.5;
+}
+
+.services__urlica-tab #tab3 .office-block h2 {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.services__urlica-tab #tab3 .office-block .icon-white-block {
+  max-width: 569px;
+}
+
+.services__urlica-tab #tab3 .office-block .icon-white-block .icon-white-item {
+  background-color: #5EC991;
+  border-radius: 10px;
+  box-shadow: 0px 0px 31.5px 0px #0000001A;
+  display: flex;
+  align-items: center;
+  padding: 20px 17px 74px 10px;
+}
+
+.services__urlica-tab #tab3 .office-block .icon-white-block .icon-white-item:nth-child(2) {
+  margin-top: -60px;
+}
+
+.services__urlica-tab #tab3 .office-block .icon-white-block .icon-white-item:nth-child(3) {
+  margin-top: -60px;
+  padding-bottom: 20px;
+}
+
+.services__urlica-tab #tab3 .office-block .icon-white-block .icon-white-item svg {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  margin-right: 13px;
+}
+
+.services__urlica-tab #tab3 .office-block .icon-white-block .icon-white-item p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.services__urlica-tab #tab3 .office-block img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 130px;
+  margin: auto 0;
+  opacity: 0.8;
+}
+
+.services__urlica-tab #tab3 .check .check-container{
+  border: none;
+  padding: 0;
+}
+
+.services__urlica-tab #tab3 .gfaq__answer .listn.tw li {
+  display: flex;
+}
 
 
 
@@ -7268,6 +7426,84 @@ p {
   .services__urlica-tab #tab2 .services__packet .services__list .list-element {
     padding: 20px 10px;
   }
+
+  .services__urlica-tab #tab3 .gdocs__info .button.spisat {
+    margin-top: 30px;
+  }
+
+  .services__urlica-tab #tab3 .gdocs__info {
+    margin-bottom: 80px;
+  }
+
+  .services__urlica-tab #tab3 .office-block img {
+    width: 224px;
+    height: 224px;
+    right: 24px;
+  }
+
+  .services__urlica-tab #tab3 .office-block .icon-white-block .icon-white-item svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .services__urlica-tab #tab3 .office-block .icon-white-block .icon-white-item p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .services__urlica-tab #tab3 .office-block .icon-white-block {
+    max-width: 550px;
+  }
+
+  .services__urlica-tab #tab3 .office-block .icon-white-block .icon-white-item {
+    padding: 10px 10px 65px;
+  }
+
+  .services__urlica-tab #tab3 .office-block .icon-white-block .icon-white-item:nth-child(3) {
+    padding-bottom: 10px;
+  }
+
+  .services__urlica-tab #tab3 .checks {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .services__urlica-tab #tab3 .check-bg {
+    padding: 30px 85px 30px 30px;
+  }
+
+  .services__urlica-tab #tab3 .check-bg p {
+    margin-bottom: 20px;
+  }
+
+  .services__urlica-tab #tab3 .check-bg p.green {
+    margin-bottom: 40px;
+  }
+
+  .services__urlica-tab #tab3 .check-bg p,
+  .services__urlica-tab #tab3 .check-bg p.green {
+    font-size: 17px;
+    line-height: 27px;
+  }
+
+  .services__urlica-tab #tab3 .gdocs__info .two {
+    width: 100%;
+    height: 100%;
+  }
+
+  .services__urlica-tab #tab3 .gfaq__answer .listn li {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .services__urlica-tab #tab3 .gfaq__answer p.bold {
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .services__urlica-tab #tab3 .gfaq__answer .listn li {
+    margin-bottom: 5px;
+  }
 }
 
 @media (max-width: 946px) {
@@ -7369,6 +7605,14 @@ p {
     white-space: wrap;
     text-align: left;
     width: 27%;
+  }
+
+  .services__urlica-tab #tab3 .office-block img {
+    display: none;
+  }
+
+  .services__urlica-tab #tab3 .office-block .icon-white-block {
+    max-width: 100%;
   }
 }
 
@@ -7547,6 +7791,10 @@ p {
 
   .services__urlica-tab .busunes__block-question .circle {
     bottom: 95px;
+  }
+
+  .services__urlica-tab #tab3 .gdocs__info {
+    display: none;
   }
 }
 
@@ -7970,6 +8218,61 @@ p {
   .services__urlica-tab .lines-block h2 {
     line-height: 30px;
     margin-bottom: 30px;
+  }
+
+  .services__urlica-tab #tab3 .office-block {
+    padding-top: 60px;
+    background-size: cover;
+  }
+
+  .services__urlica-tab #tab3 .office-block h2 {
+    margin-bottom: 30px;
+  }
+
+  .services__urlica-tab #tab3 .checks {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .services__urlica-tab #tab3 .check-bg {
+    padding: 22px;
+  }
+
+  .services__urlica-tab #tab3 .check-bg p br {
+    display: none;
+  }
+
+  .services__urlica-tab #tab3 .check-bg p,
+  .services__urlica-tab #tab3 .check .check-container {
+    text-align: left;
+  }
+
+  .services__urlica-tab #tab3 .check-bg .button.check {
+    max-width: 270px;
+  }
+
+  .services__urlica-tab #tab3 .gfaq.last h2 {
+    text-align: left;
+  }
+
+  .services__urlica-tab #tab3 .office-block .icon-white-block .icon-white-item p,
+  .services__urlica-tab #tab3 .check-bg p,
+  .services__urlica-tab #tab3 .check-bg p.green {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .services__urlica-tab #tab3 .check-bg p {
+    margin-bottom: 10px;
+  }
+
+  .services__urlica-tab #tab3 .check-bg p.green {
+    margin-bottom: 30px;
+  }
+
+  .services__urlica-tab #tab3 .checks {
+    padding-top: 30px;
+    padding-bottom: 50px;
   }
 }
 
@@ -9061,6 +9364,37 @@ p {
   }
 
   .services__urlica-tab .services__packet {
+    padding-bottom: 40px;
+  }
+
+  .services__urlica-tab #tab3 .office-block .icon-white-block .icon-white-item svg {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .services__urlica-tab #tab3 .office-block .icon-white-block .icon-white-item {
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .services__urlica-tab #tab3 .office-block .icon-white-block .icon-white-item:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .services__urlica-tab #tab3 .office-block .icon-white-block .icon-white-item:nth-child(3) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .services__urlica-tab #tab3 .check-bg p, .services__urlica-tab #tab3 .check-bg p.green {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .services__urlica-tab #tab3 .checks {
+    padding-top: 20px;
     padding-bottom: 40px;
   }
 }
