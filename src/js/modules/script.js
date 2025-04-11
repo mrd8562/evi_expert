@@ -189,3 +189,69 @@ document.addEventListener('DOMContentLoaded', function () {
     indicator.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.classList.toggle('pb0');
   })
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // 1. Находим все необходимые элементы
+  const cityItems = document.querySelectorAll('li[data-link]');
+  const otherCityItems = document.querySelectorAll('li:not([data-link])');
+  const iframe = document.querySelector('.map-block iframe');
+  const cityText = document.getElementById('cityText');
+
+  // 2. Проверяем, что все элементы существуют
+  if (!iframe) {
+    // console.error('Ошибка: не найден iframe с картой');
+    return;
+  }
+
+  if (!cityText) {
+    // console.error('Ошибка: не найден элемент для отображения города');
+    return;
+  }
+
+  // 3. Функция для изменения города
+  function changeCity(link, cityName, element) {
+    // Меняем карту (только если есть ссылка)
+    if (link) {
+      iframe.src = link;
+    }
+
+    // Меняем текст города
+    cityText.textContent = `г. ${cityName}`;
+
+    // Удаляем класс .bold у всех городов
+    document.querySelectorAll('li').forEach(li => {
+      li.classList.remove('bold');
+    });
+
+    // Добавляем класс .bold к выбранному городу
+    if (element) {
+      element.classList.add('bold');
+    }
+  }
+
+  // 4. Обработчики для городов с data-link
+  cityItems.forEach(item => {
+    item.addEventListener('click', function () {
+      const link = this.getAttribute('data-link');
+      const cityName = this.textContent;
+      changeCity(link, cityName, this);
+    });
+  });
+
+  // 5. Обработчики для городов без data-link
+  otherCityItems.forEach(item => {
+    item.addEventListener('click', function () {
+      const cityName = this.textContent;
+      changeCity(null, cityName, this); // передаем null вместо ссылки
+    });
+  });
+
+  // 6. Инициализация начального состояния (Воронеж)
+  const initialCity = document.querySelector('li.bold[data-link]');
+  if (initialCity) {
+    const link = initialCity.getAttribute('data-link');
+    const cityName = initialCity.textContent;
+    changeCity(link, cityName, initialCity);
+  }
+});
