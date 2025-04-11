@@ -191,10 +191,24 @@
   color: #fff;
 }
 
+.button.sentcont-bg {
+  background-color: #01B055;
+  color: #fff;
+  border-radius: 10px;
+  padding: 21px 24px;
+  width: 100%;
+}
+
+.button.sentcont-bg:hover {
+  background-color: #07803C;
+  color: #fff;
+}
+
 body {
 	font-family: 'NormalidadCompact', sans-serif;
 	position: relative;
 	overflow-x: hidden;
+  transition: background-color 0.3s;
 }
 
 body.blur {
@@ -6363,6 +6377,33 @@ p {
   margin-bottom: 40px;
 }
 
+/// 
+/// 404 Not Found
+/// 
+
+.not-found .container.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  height: 100vh;
+}
+
+.not-found h1 {
+  font-weight: 600;
+  font-size: 180px;
+}
+
+.not-found h2 {
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.not-found .button a {
+  display: inline-block;
+  text-transform: uppercase;
+}
 
 
 
@@ -6372,6 +6413,100 @@ p {
 
 
 
+///
+/// Модал
+/// 
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1000;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background-color: #fbfbfb;
+  border: 1px solid #D6CBC1;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  transform: scale(0.9);
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.modal-overlay.active .modal {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Анимация для второго модального окна */
+.modal-2 {
+  transform: translateY(50px);
+}
+
+.modal-overlay.active .modal-2 {
+  transform: translateY(0);
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+.modal-body {
+  padding: 30px;
+
+}
+
+.modal-body .form-container {
+  padding: 0;
+  border: none;
+  margin-bottom: 0;
+}
+
+.modal-body .form-container .contact-form h2 {
+  font-size: 23px;
+  line-height: 33px;
+  text-align: center;
+}
+
+.modal-body .form-container .contact-form p {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.modal-body .form-container .contact-form input[type=text] {
+  width: 100%;
+}
+
+.modal-body .form-container .iti {
+  width: 100%;
+}
+
+.modal-body .form-container .iti input[type=tel] {
+  padding-bottom: 10px;
+}
+
+.modal-body .form-container .contact-form .button.sendcont {
+
+}
 
 
 
@@ -6432,6 +6567,14 @@ p {
 	display: flex;
 	gap: 10px;
 	margin-bottom: 10px;
+}
+
+.footer-element .info .info-item .contacts {
+  color: #fff;
+}
+
+.footer-element .info .info-item .contacts br {
+  display: none;
 }
 
 .footer-element .info .info-item span {
@@ -7189,6 +7332,10 @@ p {
 		margin-top: 40px;
 		width: 100%;
 	}
+  .footer-element .info .info-item .contacts br {
+    display: block;
+  }
+
 	.footer-element:last-child .info{
 		display: flex;
 		flex-wrap: wrap;
@@ -8049,6 +8196,36 @@ p {
   .filials .city-list .city-cont {
     margin-bottom: 30px;
   }
+
+  .modal {
+    max-width: 370px;
+  }
+
+  .modal-body {
+    padding: 20px;
+  }
+
+  .modal-body .form-container .contact-form h2 {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .modal-body .form-container .contact-form p {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .modal-body .form-container .contact-form input[type=text] {
+    font-size: 15px;
+  }
+
+  .modal-body .form-container .contact-form .checkbox {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 946px) {
@@ -8214,6 +8391,19 @@ p {
     text-align: center;
     gap: 20px;
   }
+
+  .modal-body .form-container .contact-form .checkbox {
+    order: 0;
+  }
+
+  .modal-body .form-container .contact-form input[type=text] {
+    order: 0;
+  }
+
+  .modal-body .form-container .iti {
+		order: 0;
+    padding: 0;
+	}
 }
 
 @media (max-width: 858px) {
@@ -8235,6 +8425,16 @@ p {
   .filials .city-list ul.city {
     width: 25%;
     margin-bottom: 0;
+  }
+
+  .not-found h1 {
+    font-weight: 600;
+    font-size: 120px;
+  }
+
+  .not-found h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
   }
 }
 
@@ -8947,6 +9147,30 @@ p {
   .filials .services__process .process-info {
     margin-bottom: 0;
   }
+
+  .modal {
+    max-width: 570px;
+  }
+
+  .modal-overlay {
+    padding: 30px;
+  }
+
+  .modal-body {
+    padding: 30px;
+  }
+
+  .modal-body .form-container .contact-form h2 {
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .modal-body .form-container .contact-form p {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 610px) {
@@ -9011,6 +9235,16 @@ p {
 
   .services__urlica-tab .busunes__block-question .circle {
     bottom: 40px;
+  }
+
+  .not-found h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .not-found .button a {
+    width: 100%;
+    padding: 20px 60px;
   }
 }
 
@@ -9524,6 +9758,26 @@ p {
 
   .filials .take-dog .take-flex .take-item .take-gr-item p {
     text-align: left;
+  }
+
+  .modal-body {
+    padding: 15px;
+  }
+
+  .modal-body .form-container .contact-form h2 {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 6px;
+  }
+
+  .modal-body .form-container .contact-form p {
+    font-size: 13px;
+    line-height: 23px;
+    margin-bottom: 24px;
+  }
+
+  .modal-body .form-container .button.sentcont-bg {
+    font-size: 16px;
   }
 }
 
@@ -10250,5 +10504,9 @@ p {
   .filials .zacon-block.mw {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  .not-found h1 {
+    margin-bottom: 30px;
   }
 }

@@ -255,3 +255,47 @@ document.addEventListener('DOMContentLoaded', function () {
     changeCity(link, cityName, initialCity);
   }
 });
+
+function setupModal(modalId) {
+  const modal = document.getElementById(modalId);
+  const openBtns = document.querySelectorAll(`[data-modal="${modalId}"]`);
+  const closeBtns = modal.querySelectorAll('.close-btn');
+
+  // Открытие модального окна
+  openBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  // Закрытие модального окна
+  closeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // Закрытие при клике на затемненную область
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+}
+
+// Инициализация модальных окон
+setupModal('modal-1');
+setupModal('modal-2');
+
+// Закрытие при нажатии Esc
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal-overlay.active').forEach(modal => {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  }
+});
