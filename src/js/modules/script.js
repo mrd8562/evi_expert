@@ -94,61 +94,13 @@ document.querySelectorAll('.gfaq__question').forEach(button => {
   });
 });
 
-
-// Line Services Urlica
-if (document.querySelector('.line-one')) {
-  function replaceImagesOnResize() {
-    const lineOne = document.querySelector('.line-one');
-    const lineTwo = document.querySelector('.line-two');
-    const desktopImgOne = 'img/line_one.png';
-    const mobileImgOne = lineOne.getAttribute('data-mobile');
-    const desktopImgTwo = 'img/line_two.png';
-    const mobileImgTwo = lineTwo.getAttribute('data-mobile');
-
-    if (window.innerWidth <= 960) {
-      lineOne.src = mobileImgOne;
-      lineTwo.src = mobileImgTwo;
-    } else {
-      lineOne.src = desktopImgOne;
-      lineTwo.src = desktopImgTwo;
-    }
-  }
-
-  // Запускаем при загрузке страницы
-  document.addEventListener('DOMContentLoaded', replaceImagesOnResize);
-
-  // Обновляем при изменении размера окна
-  window.addEventListener('resize', replaceImagesOnResize);
-}
-
-if (document.querySelector('.lines-more')) {
-  function replaceImagesOnResize() {
-    const linesMore = document.querySelector('.lines-more');
-    const desktopImgMore = 'img/lines-more.png';
-    const mobileImgOne = linesMore.getAttribute('data-mobile');
-
-    if (window.innerWidth <= 960) {
-      linesMore.src = mobileImgOne;
-    } else {
-      linesMore.src = desktopImgMore;
-    }
-  }
-
-  // Запускаем при загрузке страницы
-  document.addEventListener('DOMContentLoaded', replaceImagesOnResize);
-
-  // Обновляем при изменении размера окна
-  window.addEventListener('resize', replaceImagesOnResize);
-}
-
+// Urlica Tab
 document.addEventListener('DOMContentLoaded', function () {
   const tabs = document.querySelectorAll(".tab");
   const indicator = document.getElementById("indicator");
   const tabContents = document.querySelectorAll(".tab-content");
 
-  // Проверяем, существуют ли элементы на странице
   if (!tabs.length || !indicator || !tabContents.length) {
-    // console.error('Не найдены необходимые элементы для работы табов');
     return;
   }
 
@@ -164,7 +116,6 @@ document.addEventListener('DOMContentLoaded', function () {
       const activeTab = document.querySelector(".tab.active");
       const activeContent = document.querySelector(".tab-content.active");
 
-      // Проверяем наличие элементов перед работой с ними
       if (activeTab) activeTab.classList.remove("active");
       if (activeContent) activeContent.classList.remove("active");
 
@@ -179,7 +130,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Инициализация при загрузке
   const activeTab = document.querySelector(".tab.active");
   if (activeTab) setIndicator(activeTab);
 
@@ -259,21 +209,12 @@ document.addEventListener('DOMContentLoaded', function () {
 function setupModal(modalId) {
   const modal = document.getElementById(modalId);
   const openBtns = document.querySelectorAll(`[data-modal="${modalId}"]`);
-  const closeBtns = modal.querySelectorAll('.close-btn');
 
   // Открытие модального окна
   openBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       modal.classList.add('active');
       document.body.style.overflow = 'hidden';
-    });
-  });
-
-  // Закрытие модального окна
-  closeBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      modal.classList.remove('active');
-      document.body.style.overflow = '';
     });
   });
 

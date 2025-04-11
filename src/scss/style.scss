@@ -6528,6 +6528,11 @@ p {
 	display: flex;
 	justify-content: space-between;
 }
+
+.footer .footer-element:last-child {
+  width: 34%;
+}
+
 .footer .footer-element .links {
 	display: flex;
 	flex-direction: column;
@@ -6575,6 +6580,10 @@ p {
 
 .footer-element .info .info-item .contacts br {
   display: none;
+}
+
+.footer-element .info .info-item .contacts .one {
+  display: block;
 }
 
 .footer-element .info .info-item span {
@@ -8225,6 +8234,10 @@ p {
 
   .modal-body .form-container .contact-form .checkbox {
     font-size: 13px;
+  }
+
+  .footer .footer-element:last-child {
+    width: auto;
   }
 }
 
