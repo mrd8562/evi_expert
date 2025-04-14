@@ -742,6 +742,20 @@ p {
   gap: 30px;
 }
 
+.form-container .contact-form form .form-response .success {
+  color: #01B055;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.form-container .contact-form form .form-response .error {
+  color: #db0000;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
 .form-container .contact-form input[type=text] {
   width: 350px;
   padding: 10px;
@@ -9135,6 +9149,10 @@ p {
         -ms-flex-order: 0;
             order: 0;
     padding: 0;
+  }
+
+  .form-container .contact-form form .form-response {
+    order: 5;
   }
 }
 

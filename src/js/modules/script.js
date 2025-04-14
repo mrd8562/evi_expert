@@ -51,11 +51,13 @@ document.addEventListener('click', function (event) {
 });
 
 burgerMenu.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-  contactInfo.classList.toggle('active');
-  burgerMenu.classList.toggle('open');
-  body.classList.toggle('blur');
-  body.classList.toggle('showmenu');
+  if (burgerMenu) {
+    navLinks.classList.toggle('active');
+    contactInfo.classList.toggle('active');
+    burgerMenu.classList.toggle('open');
+    body.classList.toggle('blur');
+    body.classList.toggle('showmenu');
+  }
 });
 
 const dropdowns = document.querySelectorAll('.dropdown');
@@ -219,12 +221,15 @@ function setupModal(modalId) {
   });
 
   // Закрытие при клике на затемненную область
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-  });
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
 }
 
 // Инициализация модальных окон
