@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   // 1. Находим все необходимые элементы
   const cityItems = document.querySelectorAll('li[data-link]');
-  const otherCityItems = document.querySelectorAll('li:not([data-link])');
+  const otherCityItems = document.querySelectorAll('ul.city li:not([data-link])');
   const iframe = document.querySelector('.map-block iframe');
   const cityText = document.getElementById('cityText');
 
