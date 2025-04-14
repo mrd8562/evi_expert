@@ -5085,8 +5085,8 @@ p {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(75, 85, 84, 0.7725490196)), to(rgba(75, 85, 84, 0.7725490196))), url(../img/shaking-hands.jpg) no-repeat;
   background: -o-linear-gradient(rgba(75, 85, 84, 0.7725490196), rgba(75, 85, 84, 0.7725490196)), url(../img/shaking-hands.jpg) no-repeat;
   background: linear-gradient(rgba(75, 85, 84, 0.7725490196), rgba(75, 85, 84, 0.7725490196)), url(../img/shaking-hands.jpg) no-repeat;
-  background-position: 71% 66%;
-  background-size: cover;
+  background-position: 71% 66% !important;
+  background-size: cover !important;
 }
 
 .filials .check .check-bg h3 {
@@ -5236,7 +5236,8 @@ p {
   line-height: 28px;
 }
 
-.filials .take-dog .take-flex .take-item .take-gr-item svg {
+.filials .take-dog .take-flex .take-item .take-gr-item svg,
+.filials .take-dog .take-flex .take-item .take-gr-item img {
   width: 50px;
   height: 50px;
   margin-bottom: 10px;
@@ -8237,7 +8238,8 @@ p {
     line-height: 30px;
   }
 
-  .filials .take-dog .take-flex .take-item .take-gr-item svg {
+  .filials .take-dog .take-flex .take-item .take-gr-item svg,
+    .filials .take-dog .take-flex .take-item .take-gr-item img {
     width: 40px;
     height: 40px;
     margin-bottom: 10px;
@@ -11310,7 +11312,8 @@ p {
     gap: 20px;
   }
 
-  .filials .take-dog .take-flex .take-item .take-gr-item svg {
+  .filials .take-dog .take-flex .take-item .take-gr-item svg,
+  .filials .take-dog .take-flex .take-item .take-gr-item img {
     margin-bottom: 0;
     -ms-flex-negative: 0;
         flex-shrink: 0;
