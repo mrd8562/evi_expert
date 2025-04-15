@@ -1824,6 +1824,12 @@ p {
   line-height: 43px;
   margin-bottom: 6px;
   color: #202928;
+  transition: all 0.3s ease;
+}
+
+.gcontacts__link:hover ,
+.gcontacts__item .gcontacts__data:hover {
+  color: #01B055;
 }
 
 .gcontacts__item-title {
@@ -1857,6 +1863,7 @@ p {
   text-decoration-skip-ink: auto;
   font-size: 22px;
   line-height: 36px;
+  transition: all 0.3s ease;
 }
 
 .gcontacts__messengers {
@@ -1880,6 +1887,7 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  transition: all 0.3s ease;
 }
 
 .gcontacts__whatsapp {
@@ -5547,6 +5555,43 @@ p {
   color: #013d1e;
 }
 
+.scroll-to-top {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #5ec96b;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-to-top.visible {
+  opacity: 0.7;
+  visibility: visible;
+}
+
+.scroll-to-top:hover {
+  opacity: 1;
+  background-color: #039c4d;
+}
+
+.scroll-to-top svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
 .footer {
   background-color: #202928;
 }
@@ -8662,6 +8707,11 @@ p {
     transition: all 0.3s ease;
   }
 
+  .nav-links .icons.call {
+    background-color: #c11919;
+    transition: all 0.3s ease;
+  }
+
   .nav-links .icons.tg {
     background-color: #28A4E4;
     -webkit-transition: all 0.3s ease;
@@ -8677,6 +8727,10 @@ p {
 
   .nav-links .icons-socials a:hover .icons.ws {
     background-color: rgba(76, 199, 90, 0.4392156863);
+  }
+
+  .nav-links .icons-socials a:hover .icons.call {
+    background-color: #571414;
   }
 
   .nav-links .icons-socials a:hover .icons.tg {
@@ -8708,7 +8762,7 @@ p {
     position: fixed;
     width: 305px;
     background-color: #555555;
-    height: 99.27px;
+    height: 102px;
     top: 0;
     right: -305px;
     z-index: 5;
@@ -10737,7 +10791,7 @@ p {
   }
 
   .nav-links::after {
-    height: 84.16px;
+    height: 87px;
     width: 255px;
   }
 
@@ -12079,7 +12133,7 @@ p {
   }
 
   .nav-links::after {
-    height: 62.11px;
+    height: 65px;
     width: 255px;
   }
 

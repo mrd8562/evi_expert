@@ -252,3 +252,23 @@ document.querySelectorAll('a[href="#"]').forEach(link => {
       e.preventDefault();
   });
 });
+
+const scrollToTopBtn = document.querySelector('.scroll-to-top');
+
+// Показываем/скрываем кнопку при прокрутке
+window.addEventListener('scroll', function () {
+  if (window.pageYOffset > 300) {
+    scrollToTopBtn.classList.add('visible');
+  } else {
+    scrollToTopBtn.classList.remove('visible');
+  }
+});
+
+// Плавная прокрутка при клике
+scrollToTopBtn.addEventListener('click', function (e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
