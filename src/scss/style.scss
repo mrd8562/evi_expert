@@ -4883,7 +4883,7 @@ p {
   line-height: 26px;
 }
 
-.services__urlica-tab #tab2 .services__packet .services__list .list-element {
+.services__packet .services__list .list-element {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4897,8 +4897,11 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  max-width: 23%;
   padding: 42px 15px 40px;
+}
+
+.services__urlica-tab #tab2 .services__packet .services__list .list-element {
+  max-width: 23%;
 }
 
 .services__urlica-tab #tab2 .services__packet .services__list {
