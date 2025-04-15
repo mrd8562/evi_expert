@@ -375,6 +375,14 @@ strong {
   box-shadow: 0px 4px 12.5px 0px rgba(0, 0, 0, 0.2509803922) inset;
 }
 
+.button.call-us.hovered-call {
+  background-color: #8d8d8d;
+}
+
+.button.call-us.hovered-call:hover {
+  background-color: #3a3a3a;
+}
+
 .button.call-us:hover {
   background-color: #07803C;
 }
@@ -385,6 +393,16 @@ strong {
   border: 1px solid #4CC75B;
   border-radius: 10px;
   padding: 21px 27px;
+}
+
+.button.whatsapp.hovered-ws {
+  background-color: #01B055;
+  color: #fff;
+  box-shadow: 0px 4px 12.5px 0px rgba(0, 0, 0, 0.2509803922) inset;
+}
+
+.button.whatsapp.hovered-ws:hover {
+  background-color: #07803C;
 }
 
 .button.whatsapp:hover {
@@ -400,6 +418,16 @@ strong {
   border: 1px solid #28A4E4;
   border-radius: 10px;
   padding: 21px 30px;
+}
+
+.button.telegram.hovered-tg {
+  background-color: #28A4E4;
+  color: #fff;
+  box-shadow: 0px 4px 12.5px 0px rgba(0, 0, 0, 0.2509803922) inset;
+}
+
+.button.telegram.hovered-tg:hover {
+  background-color: #156186;
 }
 
 .button.telegram:hover {
