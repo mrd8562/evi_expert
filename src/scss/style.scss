@@ -1392,7 +1392,7 @@ p {
 .gfaq__answer p {
   font-size: 20px;
   line-height: 31px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .gdocs {
@@ -3614,17 +3614,16 @@ p {
   padding: 0 !important;
 }
 
-.services__process .gfaq__question,
-.services__process .gfaq__answer p {
+.gfaq__question, .gfaq__answer p {
   font-size: 17px;
   line-height: 27px;
 }
 
-.services__process .gfaq__answer {
+.gfaq__answer {
   padding: 0 20px;
 }
 
-.services__process .gfaq__item--active .gfaq__answer {
+.gfaq__item--active .gfaq__answer {
   padding: 20px;
 }
 
@@ -4599,22 +4598,18 @@ p {
   text-align: left;
 }
 
-.services__urlica-tab .gfaq__answer p {
-  margin-bottom: 20px;
-}
-
-.services__urlica-tab .gfaq__answer p.reg {
+.gfaq__answer p.reg {
   margin-bottom: 10px;
 }
 
-.services__urlica-tab .gfaq__answer ul li {
+.gfaq__answer ul li {
   list-style: disc;
   color: #01B055;
   margin-left: 20px;
   margin-bottom: 10px;
 }
 
-.services__urlica-tab .gfaq__answer ul li span {
+.gfaq__answer ul li span {
   color: #000;
 }
 
@@ -4936,13 +4931,13 @@ p {
   margin-bottom: 120px;
 }
 
-.services__urlica-tab #tab3 .gfaq__answer .listn li {
+.gfaq__answer .listn li {
   list-style: none;
   color: #000;
   margin-left: 0;
 }
 
-.services__urlica-tab #tab3 .gfaq__answer .listn li .okey {
+.gfaq__answer .listn li .okey {
   fill: #01B055;
   -webkit-transform: none;
   -ms-transform: none;
@@ -4954,11 +4949,10 @@ p {
   padding-bottom: 0;
 }
 
-.services__urlica-tab #tab3 .gfaq__answer p {
+.gfaq__answer p {
   font-weight: 400;
 }
-
-.services__urlica-tab #tab3 .gfaq__answer .green {
+.gfaq__answer .green {
   color: #01B055;
 }
 
@@ -5069,7 +5063,7 @@ p {
   padding: 0;
 }
 
-.services__urlica-tab #tab3 .gfaq__answer .listn.tw li {
+.gfaq__answer .listn.tw li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7726,17 +7720,16 @@ p {
     margin-bottom: 20px;
   }
 
-  .services__process .gfaq__question,
-  .services__process .gfaq__answer p {
+  .gfaq__question, .gfaq__answer p {
     font-size: 15px;
     line-height: 20px;
   }
 
-  .services__process .gfaq__answer {
+  .gfaq__answer {
     padding: 0 10px;
   }
 
-  .services__process .gfaq__item--active .gfaq__answer {
+  .gfaq__item--active .gfaq__answer {
     padding: 10px;
   }
 
@@ -8062,7 +8055,7 @@ p {
     bottom: 115px;
   }
 
-  .services__urlica-tab .gfaq__answer ul li span {
+  .gfaq__answer ul li span {
     font-size: 14px;
     line-height: 22px;
   }
@@ -8284,13 +8277,13 @@ p {
     height: 100%;
   }
 
-  .services__urlica-tab #tab3 .gfaq__answer .listn li {
+  .gfaq__answer .listn li {
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 5px;
   }
 
-  .services__urlica-tab #tab3 .gfaq__answer p.bold {
+  .gfaq__answer p.bold {
     font-weight: 500;
     margin-bottom: 10px;
   }
@@ -10229,7 +10222,7 @@ p {
     bottom: 60px;
   }
 
-  .services__urlica-tab .gfaq__answer ul li {
+  .gfaq__answer ul li {
     line-height: 16px;
   }
 
@@ -12387,12 +12380,12 @@ p {
     margin-bottom: 40px;
   }
 
-  .services__process .gfaq__question {
+  .gfaq__question {
     font-size: 13px;
     line-height: 18px;
   }
 
-  .services__process .gfaq__answer p {
+  .gfaq__answer p {
     font-size: 14px;
     line-height: 19px;
   }
