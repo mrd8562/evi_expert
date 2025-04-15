@@ -3614,16 +3614,17 @@ p {
   padding: 0 !important;
 }
 
-.gfaq__question, .gfaq__answer p {
+.services__process .gfaq__question,
+.services__process .gfaq__answer p {
   font-size: 17px;
   line-height: 27px;
 }
 
-.gfaq__answer {
+.services__process .gfaq__answer {
   padding: 0 20px;
 }
 
-.gfaq__item--active .gfaq__answer {
+.services__process .gfaq__item--active .gfaq__answer {
   padding: 20px;
 }
 
@@ -4598,7 +4599,7 @@ p {
   text-align: left;
 }
 
-.gfaq__answer p.reg {
+.services__urlica-tab .gfaq__answer p.reg {
   margin-bottom: 10px;
 }
 
@@ -4949,9 +4950,6 @@ p {
   padding-bottom: 0;
 }
 
-.gfaq__answer p {
-  font-weight: 400;
-}
 .gfaq__answer .green {
   color: #01B055;
 }
@@ -7720,16 +7718,17 @@ p {
     margin-bottom: 20px;
   }
 
-  .gfaq__question, .gfaq__answer p {
+  .services__process .gfaq__question,
+  .services__process .gfaq__answer p {
     font-size: 15px;
     line-height: 20px;
   }
 
-  .gfaq__answer {
+  .services__process .gfaq__answer {
     padding: 0 10px;
   }
 
-  .gfaq__item--active .gfaq__answer {
+  .services__process .gfaq__item--active .gfaq__answer {
     padding: 10px;
   }
 
@@ -12380,12 +12379,12 @@ p {
     margin-bottom: 40px;
   }
 
-  .gfaq__question {
+  .services__process .gfaq__question {
     font-size: 13px;
     line-height: 18px;
   }
 
-  .gfaq__answer p {
+  .services__process .gfaq__answer p {
     font-size: 14px;
     line-height: 19px;
   }
