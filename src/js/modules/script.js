@@ -68,7 +68,7 @@ dropdowns.forEach(dropdown => {
 
   dropdownLink.addEventListener('click', (e) => {
     if (window.innerWidth <= 876) {
-      e.preventDefault();
+      // e.preventDefault();
       dropdownContent.classList.toggle('show');
     }
   });
@@ -235,6 +235,9 @@ function setupModal(modalId) {
 // Инициализация модальных окон
 setupModal('modal-1');
 setupModal('modal-2');
+setupModal('modal-ok');
+setupModal('modal-fail');
+setupModal('modal-spam');
 
 // Закрытие при нажатии Esc
 document.addEventListener('keydown', (e) => {
