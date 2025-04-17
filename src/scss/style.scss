@@ -5186,8 +5186,9 @@ p {
   color: #000;
 }
 
-.filials .city-list ul.city li.bold {
+.filials .city-list ul.city li.active {
   color: #000;
+  text-decoration: underline;
 }
 
 .filials .city-list .map-block {
@@ -8954,6 +8955,24 @@ p {
     -ms-flex-align: center;
     align-items: center;
     gap: 12px;
+  }
+
+  .dropdown .dropdown-l {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .dropdown .dropdown-l > a {
+    width: auto;
+  }
+
+  .dropdown .dropdown-l .arrow-down {
+    display: block;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSJ3aGl0ZSIgZD0ibTE2Ljg0MyAxMC4yMTFjLjEwOC0uMTQxLjE1Ny0uMy4xNTctLjQ1NiAwLS4zODktLjMwNi0uNzU1LS43NDktLjc1NWgtOC41MDFjLS40NDUgMC0uNzUuMzY3LS43NS43NTUgMCAuMTU3LjA1LjMxNi4xNTkuNDU3IDEuMjAzIDEuNTU0IDMuMjUyIDQuMTk5IDQuMjU4IDUuNDk4LjE0Mi4xODQuMzYuMjkuNTkyLjI5LjIzIDAgLjQ0OS0uMTA3LjU5MS0uMjkxIDEuMDAyLTEuMjk5IDMuMDQ0LTMuOTQ1IDQuMjQzLTUuNDk4eiIvPjwvc3ZnPg==');
+    background-repeat: no-repeat;
+    background-position: center;
+    fill: #fff;
+    width: 35px;
   }
 
   .dropdown > a::before {
