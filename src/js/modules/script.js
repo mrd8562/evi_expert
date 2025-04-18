@@ -64,13 +64,23 @@ const dropdowns = document.querySelectorAll('.dropdown');
 
 dropdowns.forEach(dropdown => {
   const dropdownLink = dropdown.querySelector('.arrow-down');
+  const hashLink = dropdown.querySelector('a[href="#"]');
   const dropdownContent = dropdown.querySelector('.dropdown-content');
 
-  dropdownLink.addEventListener('click', (e) => {
+  const toggleMenu = (e) => {
     if (window.innerWidth <= 876) {
+      e.preventDefault();
       dropdownContent.classList.toggle('show');
     }
-  });
+  };
+
+  if (dropdownLink) {
+    dropdownLink.addEventListener('click', toggleMenu);
+  }
+
+  if (hashLink) {
+    hashLink.addEventListener('click', toggleMenu);
+  }
 });
 
 
