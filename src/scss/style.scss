@@ -321,6 +321,14 @@ h6 {
 
 /*--------------------*/
 
+.mb-125 {
+  margin-bottom: 125px !important;
+}
+
+.mb-70 {
+  margin-bottom: 70px !important;
+}
+
 .mb-20 {
   margin-bottom: 20px !important;
 }
@@ -5176,7 +5184,6 @@ p {
   font-size: 20px;
   line-height: 30px;
   color: rgba(0, 0, 0, 0.662745098);
-  cursor: pointer;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -5186,7 +5193,21 @@ p {
   color: #000;
 }
 
-.filials .city-list ul.city li.active {
+.filials .city-list ul.city li a {
+  color: rgba(0, 0, 0, 0.662745098);
+  transition: all 0.3s ease;
+}
+
+.filials .city-list ul.city li a:hover {
+  color: #000;
+}
+
+.filials .city-list ul.city li a.nonactive {
+  pointer-events: none;
+  cursor: default;
+}
+
+.filials .city-list ul.city li.active a {
   color: #000;
   text-decoration: underline;
 }
@@ -6643,7 +6664,7 @@ p {
   }
 
   .main-screen .container.page-wrapper {
-    padding-top: 200px;
+    padding-top: 165px;
     padding-bottom: 143px;
   }
 
@@ -12419,7 +12440,7 @@ p {
   }
 
   .main-screen .container.page-wrapper {
-    padding-top: 139px;
+    padding-top: 110px;
     padding-bottom: 30px;
   }
 
