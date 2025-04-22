@@ -12,19 +12,30 @@
       padding: 25px;
       border-radius: 15px;
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      text-align: center;
     }
     .calc__title {
-      text-align: center;
       margin-bottom: 20px;
+    }
+    .calc__cont {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px 0;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+    }
+    .calc__item {
+      width: 30%;
     }
     .calc__lbl {
       display: block;
       margin: 10px 0 5px;
-      font-size: 20px;
-      line-height: 24px;
+      font-size: 18px;
+      line-height: 22px;
       font-weight: 300;
     }
-    input {
+    .calc__input {
       width: 100%;
       padding: 10px;
       border-radius: 8px;
@@ -32,7 +43,7 @@
       font-size: 18px;
       font-weight: 400;
     }
-    select {
+    .calc__select {
       width: 100%;
       padding: 10px;
       border-radius: 8px;
@@ -40,15 +51,12 @@
       font-size: 16px;
       font-weight: 300;
     }
-    input:invalid {
-      border-color: red;
-    }
     .calc__btn {
-      margin-top: 20px;
+      margin-top: 30px;
       background: #01B055;
       color: #fff;
       padding: 14px;
-      width: 100%;
+      width: 40%;
       border: none;
       border-radius: 8px;
       font-size: 18px;
@@ -67,7 +75,7 @@
       .calc__title {
         font-size: 20px;
       }
-      input, select {
+      .calc__input, .calc__select {
         font-size: 14px;
       }
     }
@@ -259,20 +267,34 @@
         </div>
         <div class="calculator">
           <h2 class="calc__title">Калькулятор финансовой ситуации</h2>
-          <label class="calc__lbl">Ежемесячный доход</label>
-          <input type="number" id="income" min="0" required />      
-          <label class="calc__lbl">Количество человек в семье</label>
-          <input type="number" id="familyCount" min="1" required />      
-          <label class="calc__lbl">Сумма долга перед кредиторами</label>
-          <input type="number" id="creditDebt" min="0" required />      
-          <label class="calc__lbl">Задолженность по коммунальным платежам</label>
-          <input type="number" id="communalDebt" min="0" required />      
-          <label class="calc__lbl">Прожиточный минимум (по региону)</label>
-          <select id="regionSelect" required>
-            <option value="">Выберите регион</option>
-          </select>      
-          <label class="calc__lbl">Расходы на детей, аренду, лекарства</label>
-          <input type="number" id="otherExpenses" min="0" required />      
+          <div class="calc__cont">
+            <div class="calc__item">
+              <label class="calc__lbl">Ежемесячный доход*</label>
+              <input class="calc__input" type="number" id="income" min="0" required />
+            </div>
+            <div class="calc__item">
+              <label class="calc__lbl">Количество человек в семье*</label>
+              <input class="calc__input" type="number" id="familyCount" min="1" required />  
+            </div>
+            <div class="calc__item">
+              <label class="calc__lbl">Сумма долга перед кредиторами*</label>
+              <input class="calc__input" type="number" id="creditDebt" min="0" required />  
+            </div>
+            <div class="calc__item">
+              <label class="calc__lbl">Задолженность по коммунальным платежам</label>
+              <input class="calc__input" type="number" id="communalDebt" min="0" required />      
+            </div>
+            <div class="calc__item">
+              <label class="calc__lbl">Прожиточный минимум (по региону)*</label>
+              <select class="calc__select" id="regionSelect" required>
+                <option value="">Выберите регион</option>
+              </select>       
+            </div>
+            <div class="calc__item">
+              <label class="calc__lbl">Расходы на детей, аренду, лекарства</label>
+              <input class="calc__input" type="number" id="otherExpenses" min="0" required />      
+            </div>
+          </div>     
           <button class="calc__btn" onclick="calculate()">Рассчитать</button>      
           <div class="result" id="result"></div>
         </div>
