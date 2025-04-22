@@ -83,7 +83,6 @@ dropdowns.forEach(dropdown => {
   }
 });
 
-
 // Faq
 document.querySelectorAll('.gfaq__question').forEach(button => {
   button.addEventListener('click', () => {
@@ -270,3 +269,11 @@ scrollToTopBtn.addEventListener('click', function (e) {
     behavior: 'smooth'
   });
 });
+
+const logo = document.querySelector('.logo');
+
+if (logo) {
+  logo.addEventListener('click', function(e) {
+    document.cookie = `user_city=Москва; path=/; max-age=${30 * 24 * 60 * 60}`;
+  })
+}
