@@ -15,7 +15,12 @@
       text-align: center;
     }
     .calc__title {
-      margin-bottom: 20px;
+      margin-bottom: 10px !important;
+      text-align: left;
+    }
+    .calc__text {
+      text-align: left;
+      margin-bottom: 24px;
     }
     .calc__cont {
       display: flex;
@@ -27,13 +32,42 @@
     }
     .calc__item {
       width: 30%;
+      /* background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij48cGF0aCBmaWxsPSJncmF5IiBkPSJNMTAuOTExIDUuNjMzcS0uNjA4LS41MS0xLjY1OC0uNTEtLjQ2OSAwLS45OTQuMTA1dC0uODY3LjIzN3YuOTk2aC4wNDlxLjI3My0uMTcuNzQ1LS4zMzdhMyAzIDAgMCAxIC45OTktLjE2NnEuNTkgMCAuOTY0LjI3MS4zNzMuMjcxLjM3My44MjMgMCAuNDItLjE1Ni42OTFhMi4yIDIuMiAwIDAgMS0uNDM5LjUyNSAzLjMgMy4zIDAgMCAxLS42MDMuNDM0cS0uMzcuMjE1LS42ODYuMzk2djEuNDg5aC44NzRWOS40ODhxLjQtLjIzLjc1Ny0uNDc0dC42My0uNTIzcS4yNzktLjI4OC40NDktLjY2Mi4xNzEtLjM3My4xNzEtLjg1MiAwLS44MzMtLjYwOC0xLjM0NE04LjU5NCAxMS41MWguOTk2djEuMDNoLS45OTZ6Ii8+PHBhdGggZmlsbD0iZ3JheSIgZD0iTTkgMThjLTQuOTYyIDAtOS00LjAzNy05LTkgMC00Ljk2MiA0LjAzOC05IDktOSA0Ljk2MyAwIDkgNC4wMzggOSA5IDAgNC45NjMtNC4wMzcgOS05IDlNOSAxQzQuNTg5IDEgMSA0LjU4OSAxIDlzMy41ODkgOCA4IDggOC0zLjU4OSA4LTgtMy41ODktOC04LTgiLz48L3N2Zz4=) no-repeat 100% 20%; */
+    }
+    .tooltip-icon {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij48cGF0aCBmaWxsPSJncmF5IiBkPSJNMTAuOTExIDUuNjMzcS0uNjA4LS41MS0xLjY1OC0uNTEtLjQ2OSAwLS45OTQuMTA1dC0uODY3LjIzN3YuOTk2aC4wNDlxLjI3My0uMTcuNzQ1LS4zMzdhMyAzIDAgMCAxIC45OTktLjE2NnEuNTkgMCAuOTY0LjI3MS4zNzMuMjcxLjM3My44MjMgMCAuNDItLjE1Ni42OTFhMi4yIDIuMiAwIDAgMS0uNDM5LjUyNSAzLjMgMy4zIDAgMCAxLS42MDMuNDM0cS0uMzcuMjE1LS42ODYuMzk2djEuNDg5aC44NzRWOS40ODhxLjQtLjIzLjc1Ny0uNDc0dC42My0uNTIzcS4yNzktLjI4OC40NDktLjY2Mi4xNzEtLjM3My4xNzEtLjg1MiAwLS44MzMtLjYwOC0xLjM0NE04LjU5NCAxMS41MWguOTk2djEuMDNoLS45OTZ6Ii8+PHBhdGggZmlsbD0iZ3JheSIgZD0iTTkgMThjLTQuOTYyIDAtOS00LjAzNy05LTkgMC00Ljk2MiA0LjAzOC05IDktOSA0Ljk2MyAwIDkgNC4wMzggOSA5IDAgNC45NjMtNC4wMzcgOS05IDlNOSAxQzQuNTg5IDEgMSA0LjU4OSAxIDlzMy41ODkgOCA4IDggOC0zLjU4OSA4LTgtMy41ODktOC04LTgiLz48L3N2Zz4=) no-repeat 50%;
+      background-size: contain;
+      margin-left: 6px;
+      cursor: pointer;
+      vertical-align: middle;
+      position: relative;
+    }
+
+    .tooltip-text {
+      display: none;
+      position: absolute;
+      background-color: #f8f8f8;
+      color: #333;
+      padding: 10px;
+      border-radius: 5px;
+      width: 280px;
+      font-size: 14px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      z-index: 10;
+      top: 25px;
+      left: 0;
     }
     .calc__lbl {
       display: block;
       margin: 10px 0 5px;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 22px;
       font-weight: 300;
+      position: relative;
+      display: inline-block;
     }
     .calc__input {
       width: 100%;
@@ -267,31 +301,63 @@
         </div>
         <div class="calculator">
           <h2 class="calc__title">Калькулятор финансовой ситуации</h2>
+          <p class="calc__text">Используйте калькулятор для проверки - нужно банкротство или нет</p>
           <div class="calc__cont">
             <div class="calc__item">
-              <label class="calc__lbl">Ежемесячный доход*</label>
+              <label class="calc__lbl">Ежемесячный доход*
+                <span class="tooltip-icon" tabindex="0"></span>
+                <div class="tooltip-text">
+                  Впишите доход, который используется как бюджет на жизнь (ваш личный, супруг/супруга). Например: 90 000 руб. + 30 000 руб. = 120 000 руб.
+                </div>
+              </label>
               <input class="calc__input" type="number" id="income" min="0" required />
             </div>
+            
             <div class="calc__item">
-              <label class="calc__lbl">Количество человек в семье*</label>
+              <label class="calc__lbl">Количество человек в семье*
+                <span class="tooltip-icon" tabindex="0"></span>
+                <div class="tooltip-text">
+                  Впишите кол-во человек.
+                </div>
+              </label>
               <input class="calc__input" type="number" id="familyCount" min="1" required />  
             </div>
             <div class="calc__item">
-              <label class="calc__lbl">Сумма долга перед кредиторами*</label>
+              <label class="calc__lbl">Сумма долга перед кредиторами*
+                <span class="tooltip-icon" tabindex="0"></span>
+                <div class="tooltip-text">
+                  Ссумируйте все свои кредитные обязательства и впишите сумму. Например это 3 банка, каждому по 300.000 рублей, сумма = 900.000 руб. Эту сумму нужно вписать.
+                </div>
+              </label>
               <input class="calc__input" type="number" id="creditDebt" min="0" required />  
             </div>
             <div class="calc__item">
-              <label class="calc__lbl">Задолженность по коммунальным платежам</label>
+              <label class="calc__lbl">Задолженность по коммунальным платежам
+                <span class="tooltip-icon" tabindex="0"></span>
+                <div class="tooltip-text">
+                  К примеру, вы не платили 6 месяцев, сумма долга 48 000 рублей. Эту сумму нужно вписать.
+                </div>
+              </label>
               <input class="calc__input" type="number" id="communalDebt" min="0" required />      
             </div>
             <div class="calc__item">
-              <label class="calc__lbl">Прожиточный минимум (по региону)*</label>
+              <label class="calc__lbl">Прожиточный минимум (по региону)*
+                <span class="tooltip-icon" tabindex="0"></span>
+                <div class="tooltip-text">
+                  Выберите свой регион из списка.
+                </div>
+              </label>
               <select class="calc__select" id="regionSelect" required>
                 <option value="">Выберите регион</option>
               </select>       
             </div>
             <div class="calc__item">
-              <label class="calc__lbl">Расходы на детей, аренду, лекарства</label>
+              <label class="calc__lbl">Расходы на детей, аренду, лекарства
+                <span class="tooltip-icon" tabindex="0"></span>
+                <div class="tooltip-text">
+                  Общая сумма расходов без прожиточного минимума (продуктов, одежды, жкх, транспортных и культурных услуг). Например общий расход на семью без прожиточного минимума = 50 000 руб. Эту сумму нужно вписать.
+                </div>
+              </label>
               <input class="calc__input" type="number" id="otherExpenses" min="0" required />      
             </div>
           </div>     
@@ -434,7 +500,25 @@
         </div>
       </div>
     </section>
-    @@include('html/footer.html',{})       
+    @@include('html/footer.html',{})
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".tooltip-icon").forEach(icon => {
+          icon.addEventListener("click", () => {
+            const tip = icon.nextElementSibling;
+            tip.style.display = tip.style.display === "block" ? "none" : "block";
+          });
+    
+          // закрытие при клике вне подсказки
+          document.addEventListener("click", (e) => {
+            if (!icon.contains(e.target) && !icon.nextElementSibling.contains(e.target)) {
+              icon.nextElementSibling.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+    
     <script>
       const regionData = {
         "Белгородская область": 14896,
