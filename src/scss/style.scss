@@ -684,12 +684,16 @@ p {
   font-size: 23px;
   max-width: 742px;
   line-height: 32px;
+  font-weight: 400;
 }
-ul li {
+
+ul.consultation-info li {
   list-style: disc;
   margin-left: 20px;
   margin-bottom: 10px;
+  font-weight: 300;
 }
+
 @media (max-width: 640px) {
   ul li {
     line-height: 16px;
