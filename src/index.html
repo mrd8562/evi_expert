@@ -4,116 +4,6 @@
     "title":"Главная"
   })
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
-  <style>
-    .calculator {
-      width: 100%;
-      margin: 70px auto 0;
-      background: #fff;
-      padding: 25px;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .calc__title {
-      margin-bottom: 10px !important;
-      text-align: left;
-    }
-    .calc__text {
-      text-align: left;
-      margin-bottom: 24px;
-    }
-    .calc__cont {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px 0;
-      justify-content: space-between;
-      align-items: center;
-      text-align: left;
-    }
-    .calc__item {
-      width: 30%;
-      /* background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij48cGF0aCBmaWxsPSJncmF5IiBkPSJNMTAuOTExIDUuNjMzcS0uNjA4LS41MS0xLjY1OC0uNTEtLjQ2OSAwLS45OTQuMTA1dC0uODY3LjIzN3YuOTk2aC4wNDlxLjI3My0uMTcuNzQ1LS4zMzdhMyAzIDAgMCAxIC45OTktLjE2NnEuNTkgMCAuOTY0LjI3MS4zNzMuMjcxLjM3My44MjMgMCAuNDItLjE1Ni42OTFhMi4yIDIuMiAwIDAgMS0uNDM5LjUyNSAzLjMgMy4zIDAgMCAxLS42MDMuNDM0cS0uMzcuMjE1LS42ODYuMzk2djEuNDg5aC44NzRWOS40ODhxLjQtLjIzLjc1Ny0uNDc0dC42My0uNTIzcS4yNzktLjI4OC40NDktLjY2Mi4xNzEtLjM3My4xNzEtLjg1MiAwLS44MzMtLjYwOC0xLjM0NE04LjU5NCAxMS41MWguOTk2djEuMDNoLS45OTZ6Ii8+PHBhdGggZmlsbD0iZ3JheSIgZD0iTTkgMThjLTQuOTYyIDAtOS00LjAzNy05LTkgMC00Ljk2MiA0LjAzOC05IDktOSA0Ljk2MyAwIDkgNC4wMzggOSA5IDAgNC45NjMtNC4wMzcgOS05IDlNOSAxQzQuNTg5IDEgMSA0LjU4OSAxIDlzMy41ODkgOCA4IDggOC0zLjU4OSA4LTgtMy41ODktOC04LTgiLz48L3N2Zz4=) no-repeat 100% 20%; */
-    }
-    .tooltip-icon {
-      display: inline-block;
-      width: 18px;
-      height: 18px;
-      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij48cGF0aCBmaWxsPSJncmF5IiBkPSJNMTAuOTExIDUuNjMzcS0uNjA4LS41MS0xLjY1OC0uNTEtLjQ2OSAwLS45OTQuMTA1dC0uODY3LjIzN3YuOTk2aC4wNDlxLjI3My0uMTcuNzQ1LS4zMzdhMyAzIDAgMCAxIC45OTktLjE2NnEuNTkgMCAuOTY0LjI3MS4zNzMuMjcxLjM3My44MjMgMCAuNDItLjE1Ni42OTFhMi4yIDIuMiAwIDAgMS0uNDM5LjUyNSAzLjMgMy4zIDAgMCAxLS42MDMuNDM0cS0uMzcuMjE1LS42ODYuMzk2djEuNDg5aC44NzRWOS40ODhxLjQtLjIzLjc1Ny0uNDc0dC42My0uNTIzcS4yNzktLjI4OC40NDktLjY2Mi4xNzEtLjM3My4xNzEtLjg1MiAwLS44MzMtLjYwOC0xLjM0NE04LjU5NCAxMS41MWguOTk2djEuMDNoLS45OTZ6Ii8+PHBhdGggZmlsbD0iZ3JheSIgZD0iTTkgMThjLTQuOTYyIDAtOS00LjAzNy05LTkgMC00Ljk2MiA0LjAzOC05IDktOSA0Ljk2MyAwIDkgNC4wMzggOSA5IDAgNC45NjMtNC4wMzcgOS05IDlNOSAxQzQuNTg5IDEgMSA0LjU4OSAxIDlzMy41ODkgOCA4IDggOC0zLjU4OSA4LTgtMy41ODktOC04LTgiLz48L3N2Zz4=) no-repeat 50%;
-      background-size: contain;
-      margin-left: 6px;
-      cursor: pointer;
-      vertical-align: middle;
-      position: relative;
-    }
-
-    .tooltip-text {
-      display: none;
-      position: absolute;
-      background-color: #f8f8f8;
-      color: #333;
-      padding: 10px;
-      border-radius: 5px;
-      width: 280px;
-      font-size: 14px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-      z-index: 10;
-      top: 25px;
-      left: 0;
-    }
-    .calc__lbl {
-      display: block;
-      margin: 10px 0 5px;
-      font-size: 16px;
-      line-height: 22px;
-      font-weight: 300;
-      position: relative;
-      display: inline-block;
-    }
-    .calc__input {
-      width: 100%;
-      padding: 10px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-size: 18px;
-      font-weight: 400;
-    }
-    .calc__select {
-      width: 100%;
-      padding: 10px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-      font-weight: 300;
-    }
-    .calc__btn {
-      margin-top: 30px;
-      background: #01B055;
-      color: #fff;
-      padding: 14px;
-      width: 40%;
-      border: none;
-      border-radius: 8px;
-      font-size: 18px;
-      cursor: pointer;
-    }
-    .calc__btn:hover {
-      background: #02974a;
-    }
-    .result {
-      margin-top: 20px;
-      font-size: 20px;
-      line-height: 24px;
-      text-align: center;
-    }
-    @media (max-width: 480px) {
-      .calc__title {
-        font-size: 20px;
-      }
-      .calc__input, .calc__select {
-        font-size: 14px;
-      }
-    }
-  </style>
   <body>
     <div class="bg-main">
       <div class="page-wrapper first-screen">
@@ -311,8 +201,7 @@
                 </div>
               </label>
               <input class="calc__input" type="number" id="income" min="0" required />
-            </div>
-            
+            </div>            
             <div class="calc__item">
               <label class="calc__lbl">Количество человек в семье*
                 <span class="tooltip-icon" tabindex="0"></span>
@@ -508,8 +397,6 @@
             const tip = icon.nextElementSibling;
             tip.style.display = tip.style.display === "block" ? "none" : "block";
           });
-    
-          // закрытие при клике вне подсказки
           document.addEventListener("click", (e) => {
             if (!icon.contains(e.target) && !icon.nextElementSibling.contains(e.target)) {
               icon.nextElementSibling.style.display = "none";
@@ -517,8 +404,7 @@
           });
         });
       });
-    </script>
-    
+    </script>    
     <script>
       const regionData = {
         "Белгородская область": 14896,
