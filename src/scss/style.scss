@@ -685,6 +685,17 @@ p {
   max-width: 742px;
   line-height: 32px;
 }
+ul li {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+@media (max-width: 640px) {
+  ul li {
+    line-height: 16px;
+  }
+}
 
 .man-block {
   position: absolute;
@@ -1243,7 +1254,7 @@ p {
     line-height: 18px;
   }
   .tooltip-text {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 @media (max-width: 1144px) {
@@ -1300,7 +1311,6 @@ p {
     gap: 8px;
   }
   .calc__lbl {
-    font-size: 12px;
     line-height: 16px;
   }
   .tooltip-icon {
@@ -1308,7 +1318,6 @@ p {
     height: 15px;
   }
   .tooltip-text {
-    font-size: 10px;
     top: 21px;
     padding: 6px;
   }
